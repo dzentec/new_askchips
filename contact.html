@@ -4,30 +4,222 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact & Request for Quote (RFQ) — AskChips</title>
-  <meta name="description" content="Submit your BOM or PCB design files for immediate review and competitive quote turnaround within 24 hours. Global engineering support.">
+  <meta name="description" content="Submit your Bill of Materials or PCB Gerber files for line-by-line pricing and availability within 24 hours. Global engineering support in Shenzhen and Hong Kong.">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="stylesheet" href="/src/css/main.css">
 </head>
 <body class="bg-slate-50 text-slate-900 font-sans antialiased min-h-screen flex flex-col">
+  <!-- Global Header Anchor -->
   <div id="global-header"></div>
 
   <main class="flex-grow">
-    <!-- Header Hero -->
-    <section class="bg-white border-b border-slate-200/80 bg-grid-pattern py-16 lg:py-20">
+    <!-- Contact Hero Section -->
+    <section class="relative overflow-hidden bg-white border-b border-slate-200/80 bg-grid-pattern py-14 sm:py-20">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-blue-50 border border-blue-200 text-blue-700 text-xs font-mono font-medium mb-4">
-          INQUIRY & SUPPORT
+        <div class="max-w-3xl">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-mono font-medium mb-6">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span>DIRECT INQUIRY & GLOBAL ENGINEERING SUPPORT</span>
+            <span class="text-slate-300">•</span>
+            <span>&lt;24H RESPONSE SLA</span>
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-slate-900 leading-tight">
+            Request a Quote / <span class="text-blue-600">Contact Sales</span>
+          </h1>
+
+          <p class="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed">
+            Upload your BOM spreadsheet, Gerber packages, or part numbers. Our dedicated technical procurement engineers in Shenzhen and Hong Kong deliver itemized quotes and lead times within 24 hours.
+          </p>
         </div>
-        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900">
-          Request a Quote / Contact Sales
-        </h1>
-        <p class="mt-4 text-lg text-slate-600 max-w-2xl">
-          Upload your BOM file or project specifications. Our dedicated technical account managers respond with full pricing and lead-times within 24 hours.
-        </p>
+      </div>
+    </section>
+
+    <!-- 2-Column Main Workbench -->
+    <section class="py-16 sm:py-24 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+          
+          <!-- Left Column: Full-Scale RFQ Form (7 cols) -->
+          <div class="lg:col-span-7">
+            <div class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm">
+              <div class="flex items-center justify-between pb-4 border-b border-slate-200 mb-6">
+                <div>
+                  <h2 class="text-xl font-bold text-slate-900">Direct RFQ Intake Form</h2>
+                  <p class="text-xs text-slate-500 mt-0.5">Please provide your build details for accurate volume pricing</p>
+                </div>
+                <span class="text-xs font-mono px-2.5 py-1 rounded bg-blue-50 text-blue-700 border border-blue-200 font-semibold">24h SLA</span>
+              </div>
+
+              <!-- Container for pre-filled PCB config if coming from pcb.html -->
+              <div id="contact-attached-pcb-spec"></div>
+
+              <form id="contact-form" class="space-y-6">
+                <!-- Project Category Selection -->
+                <div>
+                  <label class="block text-xs font-mono font-semibold text-slate-700 uppercase tracking-wider mb-2">Project Classification</label>
+                  <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                    <label class="cursor-pointer">
+                      <input type="radio" name="projectType" value="Electronic Components" class="peer hidden" checked>
+                      <div class="py-2.5 px-3 rounded-lg text-xs font-mono font-semibold text-center border border-slate-200 bg-slate-50 text-slate-700 peer-checked:bg-blue-600 peer-checked:border-blue-600 peer-checked:text-white transition">
+                        Components
+                      </div>
+                    </label>
+                    <label class="cursor-pointer">
+                      <input type="radio" name="projectType" value="PCB Fabrication" class="peer hidden">
+                      <div class="py-2.5 px-3 rounded-lg text-xs font-mono font-semibold text-center border border-slate-200 bg-slate-50 text-slate-700 peer-checked:bg-blue-600 peer-checked:border-blue-600 peer-checked:text-white transition">
+                        PCB Fab
+                      </div>
+                    </label>
+                    <label class="cursor-pointer">
+                      <input type="radio" name="projectType" value="Turnkey PCBA" class="peer hidden">
+                      <div class="py-2.5 px-3 rounded-lg text-xs font-mono font-semibold text-center border border-slate-200 bg-slate-50 text-slate-700 peer-checked:bg-blue-600 peer-checked:border-blue-600 peer-checked:text-white transition">
+                        Turnkey PCBA
+                      </div>
+                    </label>
+                    <label class="cursor-pointer">
+                      <input type="radio" name="projectType" value="BOM Cost-Down" class="peer hidden">
+                      <div class="py-2.5 px-3 rounded-lg text-xs font-mono font-semibold text-center border border-slate-200 bg-slate-50 text-slate-700 peer-checked:bg-blue-600 peer-checked:border-blue-600 peer-checked:text-white transition">
+                        BOM Cost-Down
+                      </div>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Personal & Company Details -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label for="contact-name" class="block text-xs font-semibold text-slate-800 mb-1">Full Name <span class="text-red-500">*</span></label>
+                    <input type="text" id="contact-name" placeholder="e.g. Alex Johnson"
+                      class="w-full text-sm px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition">
+                  </div>
+                  <div>
+                    <label for="contact-email" class="block text-xs font-semibold text-slate-800 mb-1">Corporate Email <span class="text-red-500">*</span></label>
+                    <input type="email" id="contact-email" placeholder="alex@company.com"
+                      class="w-full text-sm px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition">
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label for="contact-company" class="block text-xs font-semibold text-slate-800 mb-1">Company / Organization <span class="text-red-500">*</span></label>
+                    <input type="text" id="contact-company" placeholder="e.g. Vertex Robotics Inc."
+                      class="w-full text-sm px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition">
+                  </div>
+                  <div>
+                    <label for="contact-phone" class="block text-xs font-semibold text-slate-800 mb-1">Phone / WhatsApp (Optional)</label>
+                    <input type="tel" id="contact-phone" placeholder="+1 (555) 000-0000"
+                      class="w-full text-sm px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition">
+                  </div>
+                </div>
+
+                <!-- Embedded BOM Upload Component -->
+                <div>
+                  <label class="block text-xs font-semibold text-slate-800 mb-1.5">Attach Bill of Materials (.xlsx, .csv) or Gerber (.zip)</label>
+                  <div id="contact-bom-uploader"></div>
+                </div>
+
+                <!-- Message / Target Pricing Textarea -->
+                <div>
+                  <label for="contact-notes" class="block text-xs font-semibold text-slate-800 mb-1">Requirements / Target Pricing / Delivery Schedule (Optional)</label>
+                  <textarea id="contact-notes" rows="3" placeholder="Please list target pricing, expected batch delivery dates, or specific manufacturer preferences..."
+                    class="w-full text-sm px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition"></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="pt-2">
+                  <button type="submit"
+                    class="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl text-base font-semibold text-white bg-blue-600 hover:bg-blue-700 transition shadow-md hover:shadow-lg">
+                    Submit Formal RFQ Inquiry
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                    </svg>
+                  </button>
+                  <p class="mt-3 text-xs text-center text-slate-500 font-mono">
+                    All specifications are protected by our strict standard non-disclosure policy.
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Right Column: Facilities & Global Support (5 cols) -->
+          <div class="lg:col-span-5 space-y-6">
+            
+            <!-- Hub 1: Shenzhen Testing Lab & HQ -->
+            <div class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-7 shadow-sm">
+              <div class="flex items-center gap-2.5 text-xs font-mono font-bold text-blue-600 mb-3">
+                <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+                SHENZHEN • TESTING LAB & SOURCING HQ
+              </div>
+              <h3 class="text-base font-bold text-slate-900 mb-2">Shenzhen Quality & Testing Center</h3>
+              <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                High-Tech Industrial Park, Nanshan District, Shenzhen, Guangdong, China
+              </p>
+              <div class="space-y-2 text-xs font-mono text-slate-700 border-t border-slate-100 pt-3">
+                <div class="flex items-center justify-between">
+                  <span class="text-slate-400">Direct Phone:</span>
+                  <span class="font-bold">+86 755 8329 1188</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-slate-400">Direct Email:</span>
+                  <a href="mailto:rfq@askchips.com" class="font-bold text-blue-600 hover:underline">rfq@askchips.com</a>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-slate-400">Operating Hours:</span>
+                  <span>Mon – Sat 08:30 – 20:30 (UTC+8)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hub 2: Hong Kong Logistics Port -->
+            <div class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-7 shadow-sm">
+              <div class="flex items-center gap-2.5 text-xs font-mono font-bold text-emerald-600 mb-3">
+                <span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+                HONG KONG • LOGISTICS & AIR DISPATCH
+              </div>
+              <h3 class="text-base font-bold text-slate-900 mb-2">Hong Kong International Hub</h3>
+              <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                Kowloon International Logistics Center, Hong Kong Special Administrative Region
+              </p>
+              <div class="space-y-2 text-xs font-mono text-slate-700 border-t border-slate-100 pt-3">
+                <div class="flex items-center justify-between">
+                  <span class="text-slate-400">Logistics Email:</span>
+                  <a href="mailto:logistics@askchips.com" class="font-bold text-emerald-600 hover:underline">logistics@askchips.com</a>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-slate-400">Carrier Partners:</span>
+                  <span>DHL, FedEx, UPS (Same-Day)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Trust Badges & Guarantees -->
+            <div class="bg-slate-900 text-white rounded-2xl p-6 shadow-sm border border-slate-800 space-y-4">
+              <div class="text-xs font-mono text-blue-400 font-semibold uppercase tracking-wider">PROCUREMENT GUARANTEES</div>
+              <div class="space-y-3 text-xs">
+                <div class="flex items-start gap-2.5">
+                  <svg class="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                  <span><strong>&lt; 24-Hour Guaranteed Turnaround:</strong> Full line-by-line pricing and factory stock confirmation.</span>
+                </div>
+                <div class="flex items-start gap-2.5">
+                  <svg class="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                  <span><strong>Bilateral NDA Protection:</strong> Mutual Non-Disclosure Agreement provided before receiving proprietary IP.</span>
+                </div>
+                <div class="flex items-start gap-2.5">
+                  <svg class="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                  <span><strong>Senior FAE Engineer Assigned:</strong> Dedicated technical contact guiding your BOM through procurement and production.</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
+  <!-- Global Footer Anchor -->
   <div id="global-footer"></div>
   <script type="module" src="/src/js/main.js"></script>
 </body>

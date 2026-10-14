@@ -49,10 +49,10 @@ export function renderHeader(currentPath) {
 
           <!-- Right Action & Mobile Toggle -->
           <div class="flex items-center gap-4">
-            <a href="/contact.html" class="hidden sm:inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 shadow-sm transition-all duration-150 hover:shadow focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600">
+            <button type="button" data-trigger="rfq-modal" class="hidden sm:inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 shadow-sm transition-all duration-150 hover:shadow focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-upload-cloud"><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/><path d="M12 12v9"/><path d="m16 16-4-4-4 4"/></svg>
               Upload BOM File
-            </a>
+            </button>
 
             <!-- Mobile Hamburger Button -->
             <button type="button" id="mobile-menu-btn" class="lg:hidden inline-flex items-center justify-center p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-blue-600 transition" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="mobile-drawer">
@@ -73,10 +73,10 @@ export function renderHeader(currentPath) {
         <div class="px-4 pt-3 pb-6 space-y-2">
           ${mobileLinksHtml}
           <div class="pt-4 border-t border-slate-200/60 mt-4">
-            <a href="/contact.html" class="flex w-full items-center justify-center gap-2 px-4 py-3 rounded-lg text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 shadow-sm transition">
+            <button type="button" data-trigger="rfq-modal" class="flex w-full items-center justify-center gap-2 px-4 py-3 rounded-lg text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 shadow-sm transition">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/><path d="M12 12v9"/><path d="m16 16-4-4-4 4"/></svg>
               Upload BOM File
-            </a>
+            </button>
           </div>
         </div>
       </div>
