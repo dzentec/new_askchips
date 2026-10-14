@@ -59,21 +59,21 @@
   <div id="global-header"></div>
 
   <main id="main-content" role="main" class="flex-grow">
-    <!-- PCB Hero Section -->
-    <section id="pcb-hero" class="relative overflow-hidden bg-slate-950 text-white border-b border-slate-800 py-16 sm:py-20 lg:py-24">
+    <!-- PCB Hero Section (Compact 50-60vh Standard) -->
+    <section id="pcb-hero" class="relative overflow-hidden bg-slate-950 text-white border-b border-slate-800 py-12 sm:py-16 lg:py-20 min-h-[440px] lg:min-h-[500px] flex items-center">
       <!-- Background Banner Graphic with Adaptive picture -->
       <div class="absolute inset-0 pointer-events-none z-0">
         <picture>
           <source srcset="/images/banners/hero-pcb.avif" type="image/avif">
           <source srcset="/images/banners/hero-pcb.webp" type="image/webp">
-          <img src="/images/banners/hero-pcb.jpg" alt="Precision PCB Fabrication and PCBA Assembly" class="w-full h-full object-cover object-right md:object-center opacity-40">
+          <img src="/images/banners/hero-pcb.jpg" alt="Precision PCB Fabrication and PCBA Assembly" class="w-full h-full object-cover object-right md:object-center opacity-65">
         </picture>
-        <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/85 to-transparent"></div>
-        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-slate-950/40"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/70 to-transparent"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/50 via-transparent to-slate-950/20"></div>
       </div>
 
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="max-w-4xl">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+        <div class="max-w-3xl">
           <!-- Tag -->
           <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900/90 border border-slate-700/80 text-slate-300 text-xs font-mono font-medium mb-6">
             <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
@@ -90,7 +90,7 @@
           </h1>
 
           <!-- Subtitle -->
-          <p class="mt-6 text-lg sm:text-xl text-slate-300 leading-relaxed max-w-3xl">
+          <p class="mt-6 text-lg sm:text-xl text-slate-300 leading-relaxed max-w-2xl">
             Industrial-grade bare boards and surface-mount assembly engineered for mission-critical hardware. From 24-hour quick-turn prototypes to scalable high-density multi-layer production runs.
           </p>
 
@@ -109,29 +109,33 @@
               PCBA Assembly Standards
             </a>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <!-- 4 High-Tech Capability Badges -->
-          <div class="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-4">
-            <div class="bg-slate-900/80 backdrop-blur border border-slate-800 rounded-xl p-4 shadow-sm hover:border-slate-700 transition">
-              <div class="text-xs font-mono text-blue-400 font-bold uppercase tracking-wider">TRACE / SPACE</div>
-              <div class="text-xl sm:text-2xl font-extrabold font-mono text-white mt-1">3mil / 3mil</div>
-              <div class="text-[11px] text-slate-400 mt-0.5">High-density interconnect</div>
-            </div>
-            <div class="bg-slate-900/80 backdrop-blur border border-slate-800 rounded-xl p-4 shadow-sm hover:border-slate-700 transition">
-              <div class="text-xs font-mono text-blue-400 font-bold uppercase tracking-wider">MIN DRILL</div>
-              <div class="text-xl sm:text-2xl font-extrabold font-mono text-white mt-1">0.15 mm</div>
-              <div class="text-[11px] text-slate-400 mt-0.5">Mechanical / 0.075mm Laser</div>
-            </div>
-            <div class="bg-slate-900/80 backdrop-blur border border-slate-800 rounded-xl p-4 shadow-sm hover:border-slate-700 transition">
-              <div class="text-xs font-mono text-emerald-400 font-bold uppercase tracking-wider">LAYER COUNT</div>
-              <div class="text-xl sm:text-2xl font-extrabold font-mono text-white mt-1">1 – 32 Layers</div>
-              <div class="text-[11px] text-slate-400 mt-0.5">Rigid, Flex & Rigid-Flex</div>
-            </div>
-            <div class="bg-slate-900/80 backdrop-blur border border-slate-800 rounded-xl p-4 shadow-sm hover:border-slate-700 transition">
-              <div class="text-xs font-mono text-emerald-400 font-bold uppercase tracking-wider">IMPEDANCE</div>
-              <div class="text-xl sm:text-2xl font-extrabold font-mono text-white mt-1">±5% Control</div>
-              <div class="text-[11px] text-slate-400 mt-0.5">TDR tested high-frequency</div>
-            </div>
+    <!-- PCB Capability Badges Strip -->
+    <section class="bg-slate-900 border-b border-slate-800 py-6 sm:py-8 relative z-10 shadow-inner">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+          <div class="bg-slate-800/80 border border-slate-700/80 rounded-xl p-4 shadow-sm hover:border-slate-600 transition">
+            <div class="text-xs font-mono text-blue-400 font-bold uppercase tracking-wider">TRACE / SPACE</div>
+            <div class="text-xl sm:text-2xl font-extrabold font-mono text-white mt-1">3mil / 3mil</div>
+            <div class="text-[11px] text-slate-400 mt-0.5">High-density interconnect</div>
+          </div>
+          <div class="bg-slate-800/80 border border-slate-700/80 rounded-xl p-4 shadow-sm hover:border-slate-600 transition">
+            <div class="text-xs font-mono text-blue-400 font-bold uppercase tracking-wider">MIN DRILL</div>
+            <div class="text-xl sm:text-2xl font-extrabold font-mono text-white mt-1">0.15 mm</div>
+            <div class="text-[11px] text-slate-400 mt-0.5">Mechanical / 0.075mm Laser</div>
+          </div>
+          <div class="bg-slate-800/80 border border-slate-700/80 rounded-xl p-4 shadow-sm hover:border-slate-600 transition">
+            <div class="text-xs font-mono text-emerald-400 font-bold uppercase tracking-wider">LAYER COUNT</div>
+            <div class="text-xl sm:text-2xl font-extrabold font-mono text-white mt-1">1 – 32 Layers</div>
+            <div class="text-[11px] text-slate-400 mt-0.5">Rigid, Flex & Rigid-Flex</div>
+          </div>
+          <div class="bg-slate-800/80 border border-slate-700/80 rounded-xl p-4 shadow-sm hover:border-slate-600 transition">
+            <div class="text-xs font-mono text-emerald-400 font-bold uppercase tracking-wider">IMPEDANCE</div>
+            <div class="text-xl sm:text-2xl font-extrabold font-mono text-white mt-1">±5% Control</div>
+            <div class="text-[11px] text-slate-400 mt-0.5">TDR tested high-frequency</div>
           </div>
         </div>
       </div>
