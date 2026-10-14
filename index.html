@@ -68,38 +68,51 @@
 
   <main id="main-content" role="main" class="flex-grow">
     <!-- Hero Section -->
-    <section id="hero" class="relative overflow-hidden bg-white border-b border-slate-200/80 bg-grid-pattern py-16 sm:py-24 lg:py-28">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="hero" class="relative overflow-hidden bg-slate-950 text-white border-b border-slate-800 py-16 sm:py-24 lg:py-28">
+      <!-- Background Banner Graphic with Adaptive picture -->
+      <div class="absolute inset-0 pointer-events-none z-0">
+        <picture>
+          <source srcset="/images/banners/hero-home-desktop.avif" type="image/avif" media="(min-width: 768px)">
+          <source srcset="/images/banners/hero-home-mobile.avif" type="image/avif" media="(max-width: 767px)">
+          <source srcset="/images/banners/hero-home-desktop.webp" type="image/webp" media="(min-width: 768px)">
+          <source srcset="/images/banners/hero-home-mobile.webp" type="image/webp" media="(max-width: 767px)">
+          <img src="/images/banners/hero-home-desktop.jpg" alt="AskChips Sourcing and PCB Manufacturing" class="w-full h-full object-cover object-right md:object-center opacity-40">
+        </picture>
+        <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/85 to-transparent"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-slate-950/40"></div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="max-w-4xl">
           <!-- Cert & Status Tag -->
-          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-mono font-medium mb-6">
-            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900/90 border border-slate-700/80 text-slate-300 text-xs font-mono font-medium mb-6">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
             <span>ISO 9001:2015 CERTIFIED</span>
-            <span class="text-slate-300">•</span>
+            <span class="text-slate-500">•</span>
             <span>GLOBAL B2B ELECTRONICS SUPPLY CHAIN</span>
           </div>
 
           <!-- Headline -->
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 leading-[1.1]">
-            Precision Sourcing & Turnkey <span class="text-blue-600">PCB Manufacturing</span>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.1]">
+            Precision Sourcing & Turnkey <span class="text-blue-400">PCB Manufacturing</span>
           </h1>
 
           <!-- Subtitle -->
-          <p class="mt-6 text-lg sm:text-xl text-slate-600 leading-relaxed max-w-3xl">
+          <p class="mt-6 text-lg sm:text-xl text-slate-300 leading-relaxed max-w-3xl">
             Single-source procurement for tier-1 electronic components, high-density PCBs, and rapid PCBA assembly. Backed by in-house anti-counterfeit laboratory inspection and guaranteed factory traceability.
           </p>
 
           <!-- Primary & Secondary CTAs -->
           <div class="mt-8 flex flex-wrap gap-4 items-center">
-            <a href="#quick-quote" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg text-base font-semibold text-white bg-blue-600 hover:bg-blue-700 transition shadow-sm hover:shadow-md">
+            <a href="#quick-quote" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg text-base font-semibold text-white bg-blue-600 hover:bg-blue-500 transition shadow-sm hover:shadow-md">
               <svg class="w-5 h-5 text-blue-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/>
               </svg>
               Upload BOM for Instant Quote
             </a>
-            <a href="/pcb.html" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg text-base font-semibold text-slate-800 bg-white border border-slate-300 hover:bg-slate-50 hover:border-slate-400 transition shadow-sm">
+            <a href="/pcb.html" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg text-base font-semibold text-slate-200 bg-slate-900/80 border border-slate-700 hover:bg-slate-800 hover:border-slate-600 transition shadow-sm">
               Explore PCB Capabilities
-              <svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
               </svg>
             </a>
@@ -108,25 +121,25 @@
 
         <!-- Metrics Ribbon -->
         <div class="mt-16 grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-          <div class="bg-white/80 backdrop-blur border border-slate-200 rounded-xl p-5 sm:p-6 shadow-sm hover:shadow transition-shadow">
-            <div class="text-3xl sm:text-4xl font-extrabold font-mono text-slate-900 tracking-tight">18+</div>
-            <div class="mt-1 text-sm font-semibold text-blue-600">Years Experience</div>
-            <div class="mt-1 text-xs text-slate-500 leading-normal">Supply chain mastery & authorized franchise ties</div>
+          <div class="bg-slate-900/80 backdrop-blur border border-slate-800 rounded-xl p-5 sm:p-6 shadow-sm hover:border-slate-700 transition">
+            <div class="text-3xl sm:text-4xl font-extrabold font-mono text-white tracking-tight">18+</div>
+            <div class="mt-1 text-sm font-semibold text-blue-400">Years Experience</div>
+            <div class="mt-1 text-xs text-slate-400 leading-normal">Supply chain mastery & authorized franchise ties</div>
           </div>
-          <div class="bg-white/80 backdrop-blur border border-slate-200 rounded-xl p-5 sm:p-6 shadow-sm hover:shadow transition-shadow">
-            <div class="text-3xl sm:text-4xl font-extrabold font-mono text-slate-900 tracking-tight">50,000+</div>
-            <div class="mt-1 text-sm font-semibold text-blue-600">Completed Orders</div>
-            <div class="mt-1 text-xs text-slate-500 leading-normal">Delivered to hardware engineering teams globally</div>
+          <div class="bg-slate-900/80 backdrop-blur border border-slate-800 rounded-xl p-5 sm:p-6 shadow-sm hover:border-slate-700 transition">
+            <div class="text-3xl sm:text-4xl font-extrabold font-mono text-white tracking-tight">50,000+</div>
+            <div class="mt-1 text-sm font-semibold text-blue-400">Completed Orders</div>
+            <div class="mt-1 text-xs text-slate-400 leading-normal">Delivered to hardware engineering teams globally</div>
           </div>
-          <div class="bg-white/80 backdrop-blur border border-slate-200 rounded-xl p-5 sm:p-6 shadow-sm hover:shadow transition-shadow">
-            <div class="text-3xl sm:text-4xl font-extrabold font-mono text-slate-900 tracking-tight">99.8%</div>
-            <div class="mt-1 text-sm font-semibold text-emerald-600">On-Time Dispatch</div>
-            <div class="mt-1 text-xs text-slate-500 leading-normal">Rapid 24h prototypes and scheduled mass production</div>
+          <div class="bg-slate-900/80 backdrop-blur border border-slate-800 rounded-xl p-5 sm:p-6 shadow-sm hover:border-slate-700 transition">
+            <div class="text-3xl sm:text-4xl font-extrabold font-mono text-white tracking-tight">99.8%</div>
+            <div class="mt-1 text-sm font-semibold text-emerald-400">On-Time Dispatch</div>
+            <div class="mt-1 text-xs text-slate-400 leading-normal">Rapid 24h prototypes and scheduled mass production</div>
           </div>
-          <div class="bg-white/80 backdrop-blur border border-slate-200 rounded-xl p-5 sm:p-6 shadow-sm hover:shadow transition-shadow">
-            <div class="text-3xl sm:text-4xl font-extrabold font-mono text-slate-900 tracking-tight">100%</div>
-            <div class="mt-1 text-sm font-semibold text-emerald-600">Genuine Guarantee</div>
-            <div class="mt-1 text-xs text-slate-500 leading-normal">In-house optical, X-ray & electrical test verification</div>
+          <div class="bg-slate-900/80 backdrop-blur border border-slate-800 rounded-xl p-5 sm:p-6 shadow-sm hover:border-slate-700 transition">
+            <div class="text-3xl sm:text-4xl font-extrabold font-mono text-white tracking-tight">100%</div>
+            <div class="mt-1 text-sm font-semibold text-emerald-400">Genuine Guarantee</div>
+            <div class="mt-1 text-xs text-slate-400 leading-normal">In-house optical, X-ray & electrical test verification</div>
           </div>
         </div>
       </div>
@@ -442,6 +455,16 @@
 
     <!-- Quick Quote / BOM Intake Strip -->
     <section id="quick-quote" class="py-16 sm:py-24 bg-slate-900 text-white relative overflow-hidden">
+      <!-- Background Banner Graphic -->
+      <div class="absolute inset-0 pointer-events-none z-0">
+        <picture>
+          <source srcset="/images/banners/cta-bom-home.avif" type="image/avif">
+          <source srcset="/images/banners/cta-bom-home.webp" type="image/webp">
+          <img src="/images/banners/cta-bom-home.jpg" alt="Automated SMT BOM Quote" class="w-full h-full object-cover object-center opacity-30">
+        </picture>
+        <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/90 to-slate-950/80"></div>
+      </div>
+
       <!-- Ambient Glow Accents -->
       <div class="absolute -right-24 -top-24 w-96 h-96 bg-blue-600/15 rounded-full blur-3xl pointer-events-none"></div>
       <div class="absolute -left-24 -bottom-24 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
