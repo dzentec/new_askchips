@@ -39,8 +39,8 @@ export function renderHeader(currentPath) {
           <div class="flex items-center justify-between h-20">
             
             <!-- Brand Logo -->
-            <a href="/index.html" class="flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-blue-600 rounded-lg py-1" aria-label="AskChips Home">
-              <img src="/images/main/askchips-logo.svg" alt="AskChips Logo" class="h-10 w-auto">
+            <a href="/index.html" class="flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-blue-600 rounded-lg py-1" aria-label="Faseen AskChips Home">
+              <img src="/images/main/faseen_logo_dark.svg" alt="Faseen Logo" class="h-9 w-auto">
             </a>
 
           <!-- Desktop Navigation -->

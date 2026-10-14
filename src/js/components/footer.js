@@ -11,8 +11,8 @@ export function renderFooter() {
           
           <!-- Column 1: Brand & Quality Trust (4 cols) -->
           <div class="lg:col-span-4 space-y-6">
-            <a href="/index.html" class="inline-block">
-              <img src="/images/main/askchips-logo-white.svg" alt="AskChips Logo" class="h-10 w-auto">
+            <a href="/index.html" class="inline-block" aria-label="Faseen AskChips Home">
+              <img src="/images/main/faseen_logo_bright.svg" alt="Faseen AskChips Logo" class="h-9 w-auto">
             </a>
             <p class="text-sm text-slate-400 leading-relaxed max-w-sm">
               Your trusted end-to-end industrial supply chain partner for global electronic component sourcing, precision multilayer PCB fabrication, seamless turnkey SMT assembly, and rigorous quality testing.
