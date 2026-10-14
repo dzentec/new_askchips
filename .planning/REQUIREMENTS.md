@@ -29,10 +29,10 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Interactive BOM Upload & Inquiry / RFQ System (INQ)
 
-- [ ] **INQ-01**: Interactive BOM file upload tool with drag-and-drop zone, file type validation (.xlsx, .xls, .csv), and size check
-- [ ] **INQ-02**: Client-side BOM inspector preview showing detected filename, size, and parsed row count
-- [ ] **INQ-03**: Universal RFQ modal dialog pre-fillable from any page CTA with client-side form validation
-- [ ] **INQ-04**: Contact page (`contact.html`) with office information, direct inquiry form, and interactive submission feedback
+- [x] **INQ-01**: Interactive BOM file upload tool with drag-and-drop zone, file type validation (.xlsx, .xls, .csv), and size check
+- [x] **INQ-02**: Client-side BOM inspector preview showing detected filename, size, and parsed row count
+- [x] **INQ-03**: Universal RFQ modal dialog pre-fillable from any page CTA with client-side form validation
+- [x] **INQ-04**: Contact page (`contact.html`) with office information, direct inquiry form, and interactive submission feedback
 
 ### Quality, SEO & Production Build (QUAL)
 
@@ -77,10 +77,10 @@ Which phases cover which requirements.
 | PCB-01 | Phase 3 | Complete |
 | PCB-02 | Phase 3 | Complete |
 | PCB-03 | Phase 3 | Complete |
-| INQ-01 | Phase 4 | Pending |
-| INQ-02 | Phase 4 | Pending |
-| INQ-03 | Phase 4 | Pending |
-| INQ-04 | Phase 4 | Pending |
+| INQ-01 | Phase 4 | Complete |
+| INQ-02 | Phase 4 | Complete |
+| INQ-03 | Phase 4 | Complete |
+| INQ-04 | Phase 4 | Complete |
 | QUAL-01 | Phase 5 | Pending |
 | QUAL-02 | Phase 5 | Pending |
 | QUAL-03 | Phase 5 | Pending |
