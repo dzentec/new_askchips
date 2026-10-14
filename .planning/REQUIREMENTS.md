@@ -9,11 +9,11 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Architecture, Design System & Asset Foundation (ARCH)
 
-- [ ] **ARCH-01**: Multi-page Vite workspace configured with clean HTML entrypoints (index, components, pcb, about, contact)
-- [ ] **ARCH-02**: Clean Industrial / Hi-Tech design system established with Tailwind CSS (neutral canvas, electric blue/emerald accents, Inter + JetBrains Mono)
-- [ ] **ARCH-03**: Legacy high-res assets migrated from `.init_docs/origin_old_site` into `public/images/` and optimized for responsive rendering
-- [ ] **ARCH-04**: Reusable global header with responsive navigation drawer and sticky state
-- [ ] **ARCH-05**: Reusable global footer with company links, certifications, and contact channels
+- [x] **ARCH-01**: Multi-page Vite workspace configured with clean HTML entrypoints (index, components, pcb, about, contact)
+- [x] **ARCH-02**: Clean Industrial / Hi-Tech design system established with Tailwind CSS (neutral canvas, electric blue/emerald accents, Inter + JetBrains Mono)
+- [x] **ARCH-03**: Legacy high-res assets migrated from `.init_docs/origin_old_site` into `public/images/` and optimized for responsive rendering
+- [x] **ARCH-04**: Reusable global header with responsive navigation drawer and sticky state
+- [x] **ARCH-05**: Reusable global footer with company links, certifications, and contact channels
 
 ### Core Marketing & Sourcing Pages (MKTG)
 
@@ -66,11 +66,11 @@ Which phases cover which requirements.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| ARCH-01 | Phase 1 | Pending |
-| ARCH-02 | Phase 1 | Pending |
-| ARCH-03 | Phase 1 | Pending |
-| ARCH-04 | Phase 1 | Pending |
-| ARCH-05 | Phase 1 | Pending |
+| ARCH-01 | Phase 1 | Complete |
+| ARCH-02 | Phase 1 | Complete |
+| ARCH-03 | Phase 1 | Complete |
+| ARCH-04 | Phase 1 | Complete |
+| ARCH-05 | Phase 1 | Complete |
 | MKTG-01 | Phase 2 | Pending |
 | MKTG-02 | Phase 2 | Pending |
 | MKTG-03 | Phase 2 | Pending |

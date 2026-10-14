@@ -6,7 +6,7 @@ A structured, phased transformation of AskChips from legacy web pages into a pre
 
 ## Phases
 
-- [ ] **Phase 1: Foundation, Design System & Asset Migration** - Scaffolding Vite multi-page project, Tailwind CSS tokens, global header/footer, and asset migration.
+- [x] **Phase 1: Foundation, Design System & Asset Migration** - Scaffolding Vite multi-page project, Tailwind CSS tokens, global header/footer, and asset migration.
 - [ ] **Phase 2: Core Marketing & Sourcing Pages** - Implementing Home (`index.html`), Components Sourcing (`components.html`), and About (`about.html`).
 - [ ] **Phase 3: PCB & PCBA Capabilities & Interactive Configurator** - Implementing `pcb.html`, technical capability tables, and the reactive PCB specification calculator.
 - [ ] **Phase 4: Interactive BOM Upload & Inquiry / RFQ System** - Implementing client-side BOM drag-and-drop tool, spreadsheet inspector, global RFQ modal, and Contact (`contact.html`).
@@ -27,9 +27,9 @@ A structured, phased transformation of AskChips from legacy web pages into a pre
 **Plans**: 3 plans
 
 Plans:
-- [ ] 01-01: Initialize Vite multi-page environment and configure Tailwind CSS tokens & typography
-- [ ] 01-02: Consolidate and organize legacy image assets into public directory
-- [ ] 01-03: Implement global navigation header with mobile drawer and comprehensive industrial footer
+- [x] 01-01: Initialize Vite multi-page environment and configure Tailwind CSS tokens & typography
+- [x] 01-02: Consolidate and organize legacy image assets into public directory
+- [x] 01-03: Implement global navigation header with mobile drawer and comprehensive industrial footer
 
 ---
 
@@ -105,7 +105,7 @@ Plans:
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation, Design System & Asset Migration | 0/3 | Not started | - |
+| 1. Foundation, Design System & Asset Migration | 3/3 | Complete | 2026-10-14 |
 | 2. Core Marketing & Sourcing Pages | 0/3 | Not started | - |
 | 3. PCB & PCBA Capabilities & Interactive Configurator | 0/2 | Not started | - |
 | 4. Interactive BOM Upload & Inquiry / RFQ System | 0/2 | Not started | - |
