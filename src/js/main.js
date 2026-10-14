@@ -3,6 +3,7 @@ import { initFooter } from './components/footer.js';
 import { initPcbConfigurator } from './components/pcb-configurator.js';
 import { initRfqModal, openRfqModal } from './components/rfq-modal.js';
 import { initBomUploader } from './components/bom-uploader.js';
+import { initCapabilitiesCatalog } from './components/pcb-capabilities-catalog.js';
 
 function initContactPage() {
   const contactForm = document.getElementById('contact-form');
@@ -148,6 +149,10 @@ function bootstrap() {
 
   if (document.getElementById('configurator-root')) {
     initPcbConfigurator('configurator-root');
+  }
+
+  if (document.getElementById('capabilities-catalog-mount')) {
+    initCapabilitiesCatalog();
   }
 
   if (document.getElementById('contact-form')) {
