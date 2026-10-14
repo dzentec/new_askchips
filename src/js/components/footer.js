@@ -15,7 +15,7 @@ export function renderFooter() {
               <img src="/images/main/askchips-logo-white.svg" alt="AskChips Logo" class="h-10 w-auto">
             </a>
             <p class="text-sm text-slate-400 leading-relaxed max-w-sm">
-              Your one-stop industrial supply chain partner for electronic components sourcing, precision multi-layer PCB fabrication, and turnkey SMT assembly.
+              Your trusted end-to-end industrial supply chain partner for global electronic component sourcing, precision multilayer PCB fabrication, seamless turnkey SMT assembly, and rigorous quality testing.
             </p>
             
             <!-- Quality & Certifications Badges -->
