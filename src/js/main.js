@@ -193,6 +193,41 @@ function bootstrap() {
       }
     });
   }
+
+  if (document.getElementById('components-bom-uploader')) {
+    initBomUploader('components-bom-uploader', {
+      theme: 'dark',
+      onFileChange: (meta) => {
+        const submitBtn = document.getElementById('components-submit-rfq-btn');
+        if (submitBtn) {
+          if (meta) {
+            submitBtn.innerHTML = `
+              <span>Submit RFQ with ${meta.name}</span>
+              <svg class="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+              </svg>
+            `;
+            try {
+              sessionStorage.setItem('askchips_pending_bom', JSON.stringify({
+                name: meta.name,
+                sizeFormatted: meta.sizeFormatted,
+                estimatedRows: meta.estimatedRows,
+                extension: meta.extension
+              }));
+            } catch (e) {}
+          } else {
+            submitBtn.innerHTML = `
+              <span>Submit BOM for Instant Analysis</span>
+              <svg class="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+              </svg>
+            `;
+            try { sessionStorage.removeItem('askchips_pending_bom'); } catch (e) {}
+          }
+        }
+      }
+    });
+  }
 }
 
 if (document.readyState === 'loading') {

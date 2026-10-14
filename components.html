@@ -492,42 +492,114 @@
     </section>
 
     <!-- Prominent BOM Intake Banner -->
-    <section id="bom-cta" class="py-16 sm:py-24 bg-slate-900 text-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="bg-slate-800/90 border border-slate-700 rounded-2xl p-8 sm:p-12 lg:p-16 relative overflow-hidden">
-          <div class="max-w-3xl">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-blue-900/60 border border-blue-700/60 text-blue-300 text-xs font-mono font-medium mb-4">
-              FAST LINE-BY-LINE QUOTATION
+    <section id="bom-cta" class="py-16 sm:py-24 bg-slate-900 text-white relative overflow-hidden">
+      <!-- Ambient Glow Accents -->
+      <div class="absolute -right-24 -top-24 w-96 h-96 bg-blue-600/15 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -left-24 -bottom-24 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+          
+          <!-- Left Column (7 cols): Content & Value Propositions -->
+          <div class="lg:col-span-7 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-mono font-medium">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              <span>FAST LINE-BY-LINE QUOTATION • 24H SLA</span>
             </div>
-            <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white leading-tight">
-              Have a Bill of Materials to Price?
+
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-[1.15]">
+              Have a Bill of Materials <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-300">to Price?</span>
             </h2>
-            <p class="mt-4 text-base sm:text-lg text-slate-300 leading-relaxed">
-              Upload your spreadsheet with 10 to 10,000+ line items. Our engineering procurement team delivers complete volume pricing and verified lead-times within 24 hours.
+
+            <p class="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl">
+              Upload your spreadsheet with 10 to 10,000+ line items. Our engineering procurement team delivers complete volume pricing, verified manufacturer stock, and pin-compatible second-source alternatives within 24 hours.
             </p>
 
-            <div class="mt-8 border-2 border-dashed border-slate-600 hover:border-blue-500 rounded-xl p-6 sm:p-8 bg-slate-900/50 transition-colors text-center cursor-pointer group">
-              <div class="w-12 h-12 mx-auto rounded-full bg-slate-800 text-blue-400 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/>
-                </svg>
-              </div>
-              <div class="text-sm font-medium text-slate-200">
-                <span class="text-blue-400 font-semibold underline underline-offset-2">Click to select BOM file</span> or drag & drop here
-              </div>
-              <p class="mt-1 text-xs text-slate-400 font-mono">
-                Supports Excel (.xlsx, .xls) and CSV up to 15MB • Confidentiality Guaranteed
-              </p>
-              <div class="mt-5">
-                <a href="/contact.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-semibold text-white bg-blue-600 hover:bg-blue-500 transition shadow">
-                  Submit BOM for Instant Analysis
+            <!-- 3 Trust / Feature Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
+              <div class="bg-slate-800/80 border border-slate-700/80 rounded-xl p-4">
+                <div class="w-8 h-8 rounded-lg bg-blue-900/50 text-blue-400 flex items-center justify-center mb-2.5">
                   <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+                  </svg>
+                </div>
+                <div class="text-xs font-bold text-white mb-1">500k+ Line Match</div>
+                <div class="text-[11px] text-slate-400 leading-relaxed">Direct automated cross-referencing against authorized franchise and OEM stocks.</div>
+              </div>
+
+              <div class="bg-slate-800/80 border border-slate-700/80 rounded-xl p-4">
+                <div class="w-8 h-8 rounded-lg bg-emerald-900/50 text-emerald-400 flex items-center justify-center mb-2.5">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                  </svg>
+                </div>
+                <div class="text-xs font-bold text-white mb-1">Second-Source Options</div>
+                <div class="text-[11px] text-slate-400 leading-relaxed">Pin-compatible alternates provided for obsolete, allocated, or high-cost ICs.</div>
+              </div>
+
+              <div class="bg-slate-800/80 border border-slate-700/80 rounded-xl p-4">
+                <div class="w-8 h-8 rounded-lg bg-indigo-900/50 text-indigo-400 flex items-center justify-center mb-2.5">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                  </svg>
+                </div>
+                <div class="text-xs font-bold text-white mb-1">100% In-House QA</div>
+                <div class="text-[11px] text-slate-400 leading-relaxed">Incoming visual, X-ray, and electrical testing in certified Shenzhen laboratory.</div>
+              </div>
+            </div>
+
+            <!-- Direct Contact Footer Strip -->
+            <div class="pt-4 border-t border-slate-800/80 flex flex-wrap items-center gap-6 text-xs font-mono text-slate-400">
+              <div class="flex items-center gap-2">
+                <span class="text-slate-500">Direct FAE Desk:</span>
+                <a href="tel:+8675583221175" class="text-slate-300 hover:text-white font-bold transition">+86-755-8322-1175</a>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-slate-500">Email:</span>
+                <a href="mailto:grace@askchips.com" class="text-blue-400 hover:underline">grace@askchips.com</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column (5 cols): Interactive RFQ Intake Card -->
+          <div class="lg:col-span-5">
+            <div class="bg-slate-800/90 border border-slate-700/80 rounded-2xl p-6 sm:p-8 shadow-2xl backdrop-blur relative overflow-hidden">
+              <div class="flex items-center justify-between pb-4 mb-5 border-b border-slate-700/80">
+                <div>
+                  <h3 class="text-lg font-bold text-white">Direct BOM Intake</h3>
+                  <p class="text-xs text-slate-400 mt-0.5">Attach spreadsheet or BOM file</p>
+                </div>
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-emerald-950/80 border border-emerald-800/60 text-emerald-400 text-[11px] font-mono font-medium">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                  Active Desk
+                </span>
+              </div>
+
+              <!-- Interactive BOM Uploader Mount Point -->
+              <div id="components-bom-uploader" class="mb-5"></div>
+
+              <!-- Primary Action Button -->
+              <a href="/contact.html" id="components-submit-rfq-btn"
+                class="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl text-sm font-semibold text-white bg-blue-600 hover:bg-blue-500 transition shadow-lg shadow-blue-900/30 group">
+                <span>Submit BOM for Instant Analysis</span>
+                <svg class="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                </svg>
+              </a>
+
+              <!-- Secondary Navigation Links -->
+              <div class="mt-4 pt-4 border-t border-slate-700/80 flex items-center justify-between text-xs text-slate-400">
+                <span>Need custom PCB fabrication?</span>
+                <a href="/pcb.html#spec-configurator" class="font-mono text-blue-400 hover:text-blue-300 font-medium inline-flex items-center gap-1">
+                  Configure PCB
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                   </svg>
                 </a>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
