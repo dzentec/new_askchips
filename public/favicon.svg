@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="14" fill="#0f172a"/>
+  <!-- Outer Tech Traces -->
+  <path d="M12 24H8M12 32H6M12 40H8M52 24H56M52 32H58M52 40H56M24 12V8M32 12V6M40 12V8M24 52V56M32 52V58M40 52V56" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Silicon Chip Body -->
+  <rect x="14" y="14" width="36" height="36" rx="8" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+  <!-- Inner Circuit Microchip Core -->
+  <rect x="22" y="22" width="20" height="20" rx="4" fill="#2563eb"/>
+  <!-- Center Core & Traces -->
+  <path d="M26 32H38M32 26V38" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Active Emerald Signal Dot -->
+  <circle cx="39" cy="25" r="2.5" fill="#10b981"/>
+</svg>
