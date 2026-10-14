@@ -1,12 +1,12 @@
 {
     "schema_version": 2,
-    "commit": "36b783ef0d470a0ae5bad7ad663908e7a5530d4c",
-    "indexed_at": "2026-10-14T18:56:34Z",
+    "commit": "e65df617e53dea568817f7cebe67a96455447f99",
+    "indexed_at": "2026-10-14T19:06:29Z",
     "project": "askchips",
-    "nodes": 287,
-    "edges": 311,
-    "original_size": 1900544,
-    "compressed_size": 109588,
+    "nodes": 336,
+    "edges": 372,
+    "original_size": 2162688,
+    "compressed_size": 161741,
     "compression_level": 9,
     "reconcile_basis": "git-clean-head"
 }
