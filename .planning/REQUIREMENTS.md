@@ -17,9 +17,9 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Core Marketing & Sourcing Pages (MKTG)
 
-- [ ] **MKTG-01**: Home page (`index.html`) featuring hero value prop, quick RFQ trigger, core service pillars, and trust metrics
-- [ ] **MKTG-02**: Components sourcing page (`components.html`) presenting IC categories, authorized distributor ties, guarantee badges, and direct BOM upload trigger
-- [ ] **MKTG-03**: About page (`about.html`) presenting company history, testing facilities, ISO certifications, and QC inspection process
+- [x] **MKTG-01**: Home page (`index.html`) featuring hero value prop, quick RFQ trigger, core service pillars, and trust metrics
+- [x] **MKTG-02**: Components sourcing page (`components.html`) presenting IC categories, authorized distributor ties, guarantee badges, and direct BOM upload trigger
+- [x] **MKTG-03**: About page (`about.html`) presenting company history, testing facilities, ISO certifications, and QC inspection process
 
 ### PCB & PCBA Capabilities & Interactive Configurator (PCB)
 
@@ -71,9 +71,9 @@ Which phases cover which requirements.
 | ARCH-03 | Phase 1 | Complete |
 | ARCH-04 | Phase 1 | Complete |
 | ARCH-05 | Phase 1 | Complete |
-| MKTG-01 | Phase 2 | Pending |
-| MKTG-02 | Phase 2 | Pending |
-| MKTG-03 | Phase 2 | Pending |
+| MKTG-01 | Phase 2 | Complete |
+| MKTG-02 | Phase 2 | Complete |
+| MKTG-03 | Phase 2 | Complete |
 | PCB-01 | Phase 3 | Pending |
 | PCB-02 | Phase 3 | Pending |
 | PCB-03 | Phase 3 | Pending |
