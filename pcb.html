@@ -3,31 +3,351 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PCB & PCBA Manufacturing — AskChips</title>
-  <meta name="description" content="High-precision rigid, flexible, and metal-core PCB fabrication up to 32 layers. Advanced turnkey SMT assembly with AOI and X-Ray inspection.">
+  <title>PCB Fabrication & Turnkey PCBA Assembly — AskChips</title>
+  <meta name="description" content="Precision PCB manufacturing (1-32 layers), high-frequency Rogers substrates, flexible circuits, and turnkey PCBA assembly with 01005 SMT, 3D AOI, and X-ray inspection.">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="stylesheet" href="/src/css/main.css">
 </head>
 <body class="bg-slate-50 text-slate-900 font-sans antialiased min-h-screen flex flex-col">
+  <!-- Global Header Anchor -->
   <div id="global-header"></div>
 
   <main class="flex-grow">
-    <!-- Header Hero -->
-    <section class="bg-white border-b border-slate-200/80 bg-grid-pattern py-16 lg:py-20">
+    <!-- PCB Hero Section -->
+    <section id="pcb-hero" class="relative overflow-hidden bg-white border-b border-slate-200/80 bg-grid-pattern py-16 sm:py-20 lg:py-24">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-mono font-medium mb-4">
-          FABRICATION & ASSEMBLY
+        <div class="max-w-4xl">
+          <!-- Tag -->
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-mono font-medium mb-6">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span>IPC CLASS 2 & CLASS 3</span>
+            <span class="text-slate-300">•</span>
+            <span>1-32 LAYERS</span>
+            <span class="text-slate-300">•</span>
+            <span>24H RAPID TURNAROUND</span>
+          </div>
+
+          <!-- Headline -->
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 leading-[1.1]">
+            Precision PCB Fabrication & Turnkey <span class="text-blue-600">PCBA Assembly</span>
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="mt-6 text-lg sm:text-xl text-slate-600 leading-relaxed max-w-3xl">
+            Industrial-grade bare boards and surface-mount assembly engineered for mission-critical hardware. From 24-hour quick-turn prototypes to scalable high-density multi-layer production runs.
+          </p>
+
+          <!-- Quick Navigation Bar -->
+          <div class="mt-8 flex flex-wrap gap-3 items-center">
+            <a href="#configurator" class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 transition shadow-sm">
+              <svg class="w-4 h-4 text-blue-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/>
+              </svg>
+              Configure Specifications
+            </a>
+            <a href="#capabilities-table" class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg text-sm font-semibold text-slate-800 bg-white border border-slate-300 hover:bg-slate-50 transition shadow-sm">
+              Technical Capabilities Table
+            </a>
+            <a href="#pcba-assembly" class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg text-sm font-semibold text-slate-800 bg-white border border-slate-300 hover:bg-slate-50 transition shadow-sm">
+              PCBA Assembly Standards
+            </a>
+          </div>
+
+          <!-- 4 High-Tech Capability Badges -->
+          <div class="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-4">
+            <div class="bg-white/80 border border-slate-200 rounded-xl p-4 shadow-sm">
+              <div class="text-xs font-mono text-blue-600 font-bold uppercase tracking-wider">TRACE / SPACE</div>
+              <div class="text-xl sm:text-2xl font-extrabold font-mono text-slate-900 mt-1">3mil / 3mil</div>
+              <div class="text-[11px] text-slate-500 mt-0.5">High-density interconnect</div>
+            </div>
+            <div class="bg-white/80 border border-slate-200 rounded-xl p-4 shadow-sm">
+              <div class="text-xs font-mono text-blue-600 font-bold uppercase tracking-wider">MIN DRILL</div>
+              <div class="text-xl sm:text-2xl font-extrabold font-mono text-slate-900 mt-1">0.15 mm</div>
+              <div class="text-[11px] text-slate-500 mt-0.5">Mechanical / 0.075mm Laser</div>
+            </div>
+            <div class="bg-white/80 border border-slate-200 rounded-xl p-4 shadow-sm">
+              <div class="text-xs font-mono text-emerald-600 font-bold uppercase tracking-wider">LAYER COUNT</div>
+              <div class="text-xl sm:text-2xl font-extrabold font-mono text-slate-900 mt-1">1 – 32 Layers</div>
+              <div class="text-[11px] text-slate-500 mt-0.5">Rigid, Flex & Rigid-Flex</div>
+            </div>
+            <div class="bg-white/80 border border-slate-200 rounded-xl p-4 shadow-sm">
+              <div class="text-xs font-mono text-emerald-600 font-bold uppercase tracking-wider">IMPEDANCE</div>
+              <div class="text-xl sm:text-2xl font-extrabold font-mono text-slate-900 mt-1">±5% Control</div>
+              <div class="text-[11px] text-slate-500 mt-0.5">TDR tested high-frequency</div>
+            </div>
+          </div>
         </div>
-        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900">
-          PCB & PCBA Manufacturing
-        </h1>
-        <p class="mt-4 text-lg text-slate-600 max-w-2xl">
-          Industrial-grade printed circuit board production from rapid prototypes to high-volume production with comprehensive IPC class standards.
-        </p>
+      </div>
+    </section>
+
+    <!-- Interactive Configurator Workbench Section -->
+    <section id="configurator" class="py-16 sm:py-24 bg-slate-50 border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mb-10">
+          <div class="text-xs font-mono font-semibold uppercase tracking-wider text-blue-600 mb-2">Interactive Tool</div>
+          <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900">
+            Real-Time PCB Specification Calculator
+          </h2>
+          <p class="mt-3 text-base sm:text-lg text-slate-600">
+            Customize board layers, substrate materials, thickness, surface finishes, and batch quantities with live turnaround calculations.
+          </p>
+        </div>
+
+        <!-- Mount root for JavaScript Configurator Component -->
+        <div id="configurator-root"></div>
+      </div>
+    </section>
+
+    <!-- Dense Technical Capabilities Matrix Table -->
+    <section id="capabilities-table" class="py-16 sm:py-24 bg-white border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mb-12">
+          <div class="text-xs font-mono font-semibold uppercase tracking-wider text-emerald-600 mb-2">Engineering Tolerances</div>
+          <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900">
+            PCB Manufacturing Technical Capability Matrix
+          </h2>
+          <p class="mt-4 text-base sm:text-lg text-slate-600">
+            Certified limits for standard commercial fabrication versus advanced prototype production according to IPC-6012 and IPC-A-600 standards.
+          </p>
+        </div>
+
+        <!-- Capability Table Container -->
+        <div class="border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs font-mono border-collapse">
+              <thead>
+                <tr class="bg-slate-900 text-white">
+                  <th class="py-3.5 px-4 font-semibold uppercase tracking-wider border-b border-slate-800">Parameter Category</th>
+                  <th class="py-3.5 px-4 font-semibold uppercase tracking-wider border-b border-slate-800 text-blue-300">Standard Capability</th>
+                  <th class="py-3.5 px-4 font-semibold uppercase tracking-wider border-b border-slate-800 text-amber-300">Advanced / Prototype</th>
+                  <th class="py-3.5 px-4 font-semibold uppercase tracking-wider border-b border-slate-800 text-slate-400">Tolerance / Standard</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-200 bg-white">
+                <tr class="hover:bg-slate-50 transition">
+                  <td class="py-3 px-4 font-bold text-slate-900">Layer Count</td>
+                  <td class="py-3 px-4 text-slate-700">1 – 16 Layers</td>
+                  <td class="py-3 px-4 text-slate-900 font-semibold">Up to 32 Layers</td>
+                  <td class="py-3 px-4 text-slate-500">IPC Class 2 / 3</td>
+                </tr>
+                <tr class="hover:bg-slate-50 transition">
+                  <td class="py-3 px-4 font-bold text-slate-900">Base Materials</td>
+                  <td class="py-3 px-4 text-slate-700">FR4 (Tg140/Tg170), Aluminum Core</td>
+                  <td class="py-3 px-4 text-slate-900 font-semibold">Rogers 4350B, Polyimide Flex, Megtron 6</td>
+                  <td class="py-3 px-4 text-slate-500">IPC-4101D</td>
+                </tr>
+                <tr class="hover:bg-slate-50 transition">
+                  <td class="py-3 px-4 font-bold text-slate-900">Board Thickness</td>
+                  <td class="py-3 px-4 text-slate-700">0.4mm – 3.2mm</td>
+                  <td class="py-3 px-4 text-slate-900 font-semibold">0.2mm – 6.0mm</td>
+                  <td class="py-3 px-4 text-slate-500">±10% (±0.1mm)</td>
+                </tr>
+                <tr class="hover:bg-slate-50 transition">
+                  <td class="py-3 px-4 font-bold text-slate-900">Maximum Dimensions</td>
+                  <td class="py-3 px-4 text-slate-700">500mm × 600mm</td>
+                  <td class="py-3 px-4 text-slate-900 font-semibold">600mm × 1200mm (Heavy Panel)</td>
+                  <td class="py-3 px-4 text-slate-500">±0.2mm</td>
+                </tr>
+                <tr class="hover:bg-slate-50 transition">
+                  <td class="py-3 px-4 font-bold text-slate-900">Min Track / Spacing</td>
+                  <td class="py-3 px-4 text-slate-700">4mil / 4mil (0.10mm)</td>
+                  <td class="py-3 px-4 text-slate-900 font-semibold">3mil / 3mil (0.075mm)</td>
+                  <td class="py-3 px-4 text-slate-500">±20% etching limit</td>
+                </tr>
+                <tr class="hover:bg-slate-50 transition">
+                  <td class="py-3 px-4 font-bold text-slate-900">Min Mechanical Hole</td>
+                  <td class="py-3 px-4 text-slate-700">0.20mm (8mil)</td>
+                  <td class="py-3 px-4 text-slate-900 font-semibold">0.15mm (6mil)</td>
+                  <td class="py-3 px-4 text-slate-500">PTH ±0.05mm / NPTH ±0.025mm</td>
+                </tr>
+                <tr class="hover:bg-slate-50 transition">
+                  <td class="py-3 px-4 font-bold text-slate-900">Laser Micro-Via</td>
+                  <td class="py-3 px-4 text-slate-700">0.10mm (4mil)</td>
+                  <td class="py-3 px-4 text-slate-900 font-semibold">0.075mm (3mil)</td>
+                  <td class="py-3 px-4 text-slate-500">HDI Blind / Buried Vias</td>
+                </tr>
+                <tr class="hover:bg-slate-50 transition">
+                  <td class="py-3 px-4 font-bold text-slate-900">Aspect Ratio (Thickness:Hole)</td>
+                  <td class="py-3 px-4 text-slate-700">8 : 1</td>
+                  <td class="py-3 px-4 text-slate-900 font-semibold">12 : 1</td>
+                  <td class="py-3 px-4 text-slate-500">Uniform copper plating</td>
+                </tr>
+                <tr class="hover:bg-slate-50 transition">
+                  <td class="py-3 px-4 font-bold text-slate-900">Finished Copper Weight</td>
+                  <td class="py-3 px-4 text-slate-700">1oz – 3oz</td>
+                  <td class="py-3 px-4 text-slate-900 font-semibold">4oz – 6oz (Heavy Copper)</td>
+                  <td class="py-3 px-4 text-slate-500">IPC-6012 Class 3</td>
+                </tr>
+                <tr class="hover:bg-slate-50 transition">
+                  <td class="py-3 px-4 font-bold text-slate-900">Solder Mask Bridge</td>
+                  <td class="py-3 px-4 text-slate-700">4mil (0.10mm)</td>
+                  <td class="py-3 px-4 text-slate-900 font-semibold">3mil (0.075mm)</td>
+                  <td class="py-3 px-4 text-slate-500">LPI Solder Mask</td>
+                </tr>
+                <tr class="hover:bg-slate-50 transition">
+                  <td class="py-3 px-4 font-bold text-slate-900">Impedance Control</td>
+                  <td class="py-3 px-4 text-slate-700">±10% (Differential / Single)</td>
+                  <td class="py-3 px-4 text-slate-900 font-semibold">±5% Precision Control</td>
+                  <td class="py-3 px-4 text-slate-500">Polar SI9000 & TDR Coupon</td>
+                </tr>
+                <tr class="hover:bg-slate-50 transition">
+                  <td class="py-3 px-4 font-bold text-slate-900">Surface Finishes</td>
+                  <td class="py-3 px-4 text-slate-700">Lead-Free HASL, ENIG, OSP</td>
+                  <td class="py-3 px-4 text-slate-900 font-semibold">Immersion Silver, Hard Gold, ENEPIG</td>
+                  <td class="py-3 px-4 text-slate-500">RoHS / REACH Compliant</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Technical Cross-Section Diagrams Gallery -->
+        <div class="mt-14">
+          <h3 class="text-xl font-bold text-slate-900 mb-6">
+            Fabrication Geometry & Cross-Section Reference Standards
+          </h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Diagram 1: Track -->
+            <div class="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden shadow-sm flex flex-col justify-between group">
+              <div class="h-44 bg-white border-b border-slate-200 p-3 flex items-center justify-center">
+                <img src="/images/table/Track.e6a7249.webp" alt="Trace Width & Spacing Geometry" class="h-full w-auto object-contain group-hover:scale-105 transition-transform">
+              </div>
+              <div class="p-4">
+                <div class="text-[11px] font-mono text-blue-600 font-semibold">DIAG-01 • ETCHING</div>
+                <h4 class="text-sm font-bold text-slate-900 mt-1">Trace Width & Spacing</h4>
+                <p class="text-xs text-slate-600 mt-1">3mil minimum conductor width with strict impedance-controlled cross-sections.</p>
+              </div>
+            </div>
+
+            <!-- Diagram 2: PTH -->
+            <div class="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden shadow-sm flex flex-col justify-between group">
+              <div class="h-44 bg-white border-b border-slate-200 p-3 flex items-center justify-center">
+                <img src="/images/table/PTH.cda4667.webp" alt="Plated Through Hole Tolerances" class="h-full w-auto object-contain group-hover:scale-105 transition-transform">
+              </div>
+              <div class="p-4">
+                <div class="text-[11px] font-mono text-blue-600 font-semibold">DIAG-02 • DRILLING</div>
+                <h4 class="text-sm font-bold text-slate-900 mt-1">PTH & Annular Ring</h4>
+                <p class="text-xs text-slate-600 mt-1">Hole wall copper plating &gt;20µm with minimum annular ring for tear resistance.</p>
+              </div>
+            </div>
+
+            <!-- Diagram 3: Solder Mask -->
+            <div class="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden shadow-sm flex flex-col justify-between group">
+              <div class="h-44 bg-white border-b border-slate-200 p-3 flex items-center justify-center">
+                <img src="/images/table/solderMask1.b1969df.webp" alt="Solder Mask Clearance" class="h-full w-auto object-contain group-hover:scale-105 transition-transform">
+              </div>
+              <div class="p-4">
+                <div class="text-[11px] font-mono text-blue-600 font-semibold">DIAG-03 • SOLDER MASK</div>
+                <h4 class="text-sm font-bold text-slate-900 mt-1">Mask Dam & Clearance</h4>
+                <p class="text-xs text-slate-600 mt-1">3mil minimum solder dam between fine-pitch QFP/BGA pads preventing solder bridges.</p>
+              </div>
+            </div>
+
+            <!-- Diagram 4: Panelization -->
+            <div class="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden shadow-sm flex flex-col justify-between group">
+              <div class="h-44 bg-white border-b border-slate-200 p-3 flex items-center justify-center">
+                <img src="/images/table/panelization1.7286584.webp" alt="Panelization Methods" class="h-full w-auto object-contain group-hover:scale-105 transition-transform">
+              </div>
+              <div class="p-4">
+                <div class="text-[11px] font-mono text-blue-600 font-semibold">DIAG-04 • PANELIZATION</div>
+                <h4 class="text-sm font-bold text-slate-900 mt-1">V-Score & Mouse Bites</h4>
+                <p class="text-xs text-slate-600 mt-1">Optimized breakout tabs and 30° V-scoring angles designed for clean automated de-paneling.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Turnkey PCBA Assembly Standards -->
+    <section id="pcba-assembly" class="py-16 sm:py-24 bg-slate-50 border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mb-12">
+          <div class="text-xs font-mono font-semibold uppercase tracking-wider text-blue-600 mb-2">SMT & THT Assembly</div>
+          <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900">
+            Turnkey PCBA Assembly Standards & Line Specifications
+          </h2>
+          <p class="mt-4 text-base sm:text-lg text-slate-600">
+            Advanced high-speed automated assembly lines delivering complete board manufacturing, precision component placement, and comprehensive structural inspection.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
+            <div class="text-blue-600 font-mono font-bold text-sm mb-3">LINE SPEC 01</div>
+            <h3 class="text-base font-bold text-slate-900 mb-2">Precision SMT Placement</h3>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              Yamaha & Panasonic high-speed pick-and-place lines supporting passives down to 01005 (0.4×0.2mm) and ultra-fine pitch BGA down to 0.35mm ball pitch with ±0.03mm accuracy.
+            </p>
+            <div class="text-[11px] font-mono text-slate-500 space-y-1">
+              <div>• 01005 Chip Placement</div>
+              <div>• BGA, QFN, LGA, CSP Mount</div>
+              <div>• High-Throughput Capacity</div>
+            </div>
+          </div>
+
+          <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
+            <div class="text-emerald-600 font-mono font-bold text-sm mb-3">LINE SPEC 02</div>
+            <h3 class="text-base font-bold text-slate-900 mb-2">3D SPI & AOI Inspection</h3>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              Inline 3D Solder Paste Inspection (SPI) checks solder height and volume before component placement. 3D Automated Optical Inspection (AOI) catches coplanarity and polarity flaws.
+            </p>
+            <div class="text-[11px] font-mono text-slate-500 space-y-1">
+              <div>• 100% 3D Solder Paste Volume Check</div>
+              <div>• High-Speed 3D Optical Verification</div>
+              <div>• Zero Solder Bridge Tolerance</div>
+            </div>
+          </div>
+
+          <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
+            <div class="text-indigo-600 font-mono font-bold text-sm mb-3">LINE SPEC 03</div>
+            <h3 class="text-base font-bold text-slate-900 mb-2">Transmission 3D X-Ray</h3>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              Dedicated high-magnification transmission X-ray diagnostic stations inspecting solder voids beneath BGA balls, QFN thermal pads, and hidden lead-less packages.
+            </p>
+            <div class="text-[11px] font-mono text-slate-500 space-y-1">
+              <div>• &lt;15% BGA Void Ratio Standard</div>
+              <div>• Micro-Crack & Bridging Detection</div>
+              <div>• Detailed Radiographic Inspection Logs</div>
+            </div>
+          </div>
+
+          <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
+            <div class="text-amber-600 font-mono font-bold text-sm mb-3">LINE SPEC 04</div>
+            <h3 class="text-base font-bold text-slate-900 mb-2">Conformal Coating & FCT</h3>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              Automated selective robotic conformal coating (silicone/acrylic/polyurethane), firmware flashing, and custom bed-of-nails Functional Circuit Testing (FCT).
+            </p>
+            <div class="text-[11px] font-mono text-slate-500 space-y-1">
+              <div>• IPC-CC-830 Conformal Coating</div>
+              <div>• IC In-System Flashing / Programming</div>
+              <div>• 100% Power-On Functional Test</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PCBA Action Banner -->
+        <div class="mt-12 bg-slate-900 text-white rounded-2xl p-8 sm:p-10 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div>
+            <h3 class="text-xl sm:text-2xl font-bold">Need Full Turnkey Box-Build or PCBA?</h3>
+            <p class="mt-2 text-sm text-slate-300 max-w-2xl">
+              Combine component procurement, bare board fabrication, and SMT assembly under a single contract with unified warranty coverage.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-3">
+            <a href="/contact.html" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg text-sm font-semibold text-white bg-blue-600 hover:bg-blue-500 transition shadow whitespace-nowrap">
+              Submit Turnkey PCBA Inquiry
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+              </svg>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
+  <!-- Global Footer Anchor -->
   <div id="global-footer"></div>
   <script type="module" src="/src/js/main.js"></script>
 </body>
