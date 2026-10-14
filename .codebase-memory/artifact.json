@@ -1,0 +1,11 @@
+{
+    "schema_version": 2,
+    "commit": "98214d76d42cb9dc53026080695b91d93afd166c",
+    "indexed_at": "2026-10-14T18:39:41Z",
+    "project": "askchips",
+    "nodes": 4057,
+    "edges": 11160,
+    "original_size": 11010048,
+    "compressed_size": 1720940,
+    "compression_level": 9
+}
