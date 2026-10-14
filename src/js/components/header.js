@@ -33,14 +33,15 @@ export function renderHeader(currentPath) {
   }).join('');
 
   return `
-    <nav class="sticky top-0 z-50 w-full backdrop-blur-md bg-white/95 border-b border-slate-200/90 transition-shadow duration-200" id="main-nav">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between h-20">
-          
-          <!-- Brand Logo -->
-          <a href="/index.html" class="flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-blue-600 rounded-lg py-1">
-            <img src="/images/main/askchips-logo.svg" alt="AskChips Logo" class="h-10 w-auto">
-          </a>
+    <header role="banner" id="site-header" class="sticky top-0 z-50 w-full">
+      <nav role="navigation" aria-label="Main Navigation" class="w-full backdrop-blur-md bg-white/95 border-b border-slate-200/90 transition-shadow duration-200" id="main-nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between h-20">
+            
+            <!-- Brand Logo -->
+            <a href="/index.html" class="flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-blue-600 rounded-lg py-1" aria-label="AskChips Home">
+              <img src="/images/main/askchips-logo.svg" alt="AskChips Logo" class="h-10 w-auto">
+            </a>
 
           <!-- Desktop Navigation -->
           <div class="hidden lg:flex items-center space-x-8">
@@ -81,6 +82,7 @@ export function renderHeader(currentPath) {
         </div>
       </div>
     </nav>
+  </header>
   `;
 }
 

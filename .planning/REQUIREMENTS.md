@@ -36,9 +36,9 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Quality, SEO & Production Build (QUAL)
 
-- [ ] **QUAL-01**: Fully responsive layout verified on mobile, tablet, and desktop viewports
-- [ ] **QUAL-02**: Complete SEO metadata, OpenGraph tags, semantic HTML5 structure, and accessibility markup
-- [ ] **QUAL-03**: Zero-error production build generated via `npm run build`
+- [x] **QUAL-01**: Fully responsive layout verified on mobile, tablet, and desktop viewports
+- [x] **QUAL-02**: Complete SEO metadata, OpenGraph tags, semantic HTML5 structure, and accessibility markup
+- [x] **QUAL-03**: Zero-error production build generated via `npm run build`
 
 ## v2 Requirements
 
@@ -81,9 +81,9 @@ Which phases cover which requirements.
 | INQ-02 | Phase 4 | Complete |
 | INQ-03 | Phase 4 | Complete |
 | INQ-04 | Phase 4 | Complete |
-| QUAL-01 | Phase 5 | Pending |
-| QUAL-02 | Phase 5 | Pending |
-| QUAL-03 | Phase 5 | Pending |
+| QUAL-01 | Phase 5 | Complete |
+| QUAL-02 | Phase 5 | Complete |
+| QUAL-03 | Phase 5 | Complete |
 
 **Coverage:**
 - v1 requirements: 18 total
