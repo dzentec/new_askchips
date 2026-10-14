@@ -21,6 +21,9 @@ export function initBomUploader(containerId, options = {}) {
   let fileMetadata = null;
   let errorMessage = '';
 
+  const theme = options.theme || 'light';
+  const isDark = theme === 'dark';
+
   function formatBytes(bytes) {
     if (bytes === 0) return '0 B';
     const k = 1024;
@@ -112,27 +115,27 @@ export function initBomUploader(containerId, options = {}) {
     if (fileMetadata) {
       // Populated Attachment Card State
       container.innerHTML = `
-        <div class="border border-emerald-200 bg-emerald-50/50 rounded-xl p-4 sm:p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 transition-all">
+        <div class="border ${isDark ? 'border-emerald-500/40 bg-emerald-950/40 text-white' : 'border-emerald-200 bg-emerald-50/50'} rounded-xl p-4 sm:p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 transition-all">
           <div class="flex items-center gap-3.5 min-w-0">
-            <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center flex-shrink-0">
+            <div class="w-10 h-10 rounded-lg ${isDark ? 'bg-emerald-900/60 border border-emerald-700/50 text-emerald-400' : 'bg-emerald-100 text-emerald-700'} flex items-center justify-center flex-shrink-0">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
               </svg>
             </div>
             <div class="min-w-0">
               <div class="flex items-center gap-2">
-                <span class="text-sm font-bold text-slate-900 truncate max-w-[200px] sm:max-w-xs">${fileMetadata.name}</span>
-                <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-mono font-bold uppercase bg-emerald-100 text-emerald-800">
+                <span class="text-sm font-bold ${isDark ? 'text-white' : 'text-slate-900'} truncate max-w-[200px] sm:max-w-xs">${fileMetadata.name}</span>
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-mono font-bold uppercase ${isDark ? 'bg-emerald-900/80 text-emerald-300 border border-emerald-700/60' : 'bg-emerald-100 text-emerald-800'}">
                   Ready
                 </span>
               </div>
-              <div class="text-xs font-mono text-slate-500 mt-0.5">
+              <div class="text-xs font-mono ${isDark ? 'text-slate-300' : 'text-slate-500'} mt-0.5">
                 ${fileMetadata.sizeFormatted} • ~${fileMetadata.estimatedRows} line items detected
               </div>
             </div>
           </div>
           <button type="button" id="${instanceId}-btn-remove"
-            class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold text-red-600 bg-red-50 hover:bg-red-100 hover:text-red-700 transition">
+            class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold ${isDark ? 'text-red-300 bg-red-950/60 hover:bg-red-900/80 border border-red-800/60' : 'text-red-600 bg-red-50 hover:bg-red-100 hover:text-red-700'} transition">
             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
             </svg>
@@ -150,12 +153,24 @@ export function initBomUploader(containerId, options = {}) {
       }
     } else {
       // Empty Dropzone State
+      const borderClass = isDark
+        ? (errorMessage ? 'border-red-500/80 bg-red-950/20' : 'border-slate-600 hover:border-blue-400 bg-slate-900/60 hover:bg-slate-900')
+        : (errorMessage ? 'border-red-400 bg-red-50/30' : 'border-slate-300 hover:border-blue-500 bg-slate-50/60 hover:bg-blue-50/30');
+
+      const iconBgClass = isDark
+        ? (errorMessage ? 'bg-red-900/50 text-red-400' : 'bg-blue-950/80 text-blue-400 border border-blue-800/60')
+        : (errorMessage ? 'bg-red-100 text-red-600' : 'bg-blue-50 text-blue-600');
+
+      const textPrimary = isDark ? 'text-slate-200' : 'text-slate-800';
+      const linkColor = isDark ? 'text-blue-400' : 'text-blue-600';
+      const subtextColor = isDark ? 'text-slate-400' : 'text-slate-500';
+
       container.innerHTML = `
         <div id="${instanceId}-dropzone"
-          class="group border-2 border-dashed ${errorMessage ? 'border-red-400 bg-red-50/30' : 'border-slate-300 hover:border-blue-500 bg-slate-50/60 hover:bg-blue-50/30'} rounded-xl p-6 sm:p-8 text-center cursor-pointer transition-all">
+          class="group border-2 border-dashed ${borderClass} rounded-xl p-6 sm:p-7 text-center cursor-pointer transition-all">
           <input type="file" id="${inputId}" class="hidden" accept=".xlsx,.xls,.csv,.txt,.zip">
           
-          <div class="w-12 h-12 mx-auto rounded-full ${errorMessage ? 'bg-red-100 text-red-600' : 'bg-blue-50 text-blue-600'} flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+          <div class="w-12 h-12 mx-auto rounded-full ${iconBgClass} flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
             ${errorMessage ? `
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
@@ -167,15 +182,15 @@ export function initBomUploader(containerId, options = {}) {
             `}
           </div>
 
-          <div class="text-sm font-semibold text-slate-800">
-            <span class="text-blue-600 underline underline-offset-2">Click to select BOM file</span> or drag & drop here
+          <div class="text-sm font-semibold ${textPrimary}">
+            <span class="${linkColor} underline underline-offset-2">Click to select BOM file</span> or drag & drop here
           </div>
-          <div class="text-xs font-mono text-slate-500 mt-1">
+          <div class="text-xs font-mono ${subtextColor} mt-1">
             Supports Excel (.xlsx, .xls) and CSV up to 15MB • Confidentiality Guaranteed
           </div>
 
           ${errorMessage ? `
-            <div class="mt-3 inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-red-100 text-red-700 text-xs font-medium">
+            <div class="mt-3 inline-flex items-center gap-1.5 px-3 py-1 rounded-md ${isDark ? 'bg-red-900/80 border border-red-700/80 text-red-200' : 'bg-red-100 text-red-700'} text-xs font-medium">
               ${errorMessage}
             </div>
           ` : ''}

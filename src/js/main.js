@@ -158,6 +158,41 @@ function bootstrap() {
   if (document.getElementById('contact-form')) {
     initContactPage();
   }
+
+  if (document.getElementById('index-bom-uploader')) {
+    initBomUploader('index-bom-uploader', {
+      theme: 'dark',
+      onFileChange: (meta) => {
+        const submitBtn = document.getElementById('index-submit-rfq-btn');
+        if (submitBtn) {
+          if (meta) {
+            submitBtn.innerHTML = `
+              <span>Submit RFQ with ${meta.name}</span>
+              <svg class="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+              </svg>
+            `;
+            try {
+              sessionStorage.setItem('askchips_pending_bom', JSON.stringify({
+                name: meta.name,
+                sizeFormatted: meta.sizeFormatted,
+                estimatedRows: meta.estimatedRows,
+                extension: meta.extension
+              }));
+            } catch (e) {}
+          } else {
+            submitBtn.innerHTML = `
+              <span>Proceed to Direct RFQ Intake</span>
+              <svg class="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+              </svg>
+            `;
+            try { sessionStorage.removeItem('askchips_pending_bom'); } catch (e) {}
+          }
+        }
+      }
+    });
+  }
 }
 
 if (document.readyState === 'loading') {
