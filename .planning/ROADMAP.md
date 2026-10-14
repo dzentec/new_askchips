@@ -8,7 +8,7 @@ A structured, phased transformation of AskChips from legacy web pages into a pre
 
 - [x] **Phase 1: Foundation, Design System & Asset Migration** - Scaffolding Vite multi-page project, Tailwind CSS tokens, global header/footer, and asset migration.
 - [x] **Phase 2: Core Marketing & Sourcing Pages** - Implementing Home (`index.html`), Components Sourcing (`components.html`), and About (`about.html`).
-- [ ] **Phase 3: PCB & PCBA Capabilities & Interactive Configurator** - Implementing `pcb.html`, technical capability tables, and the reactive PCB specification calculator.
+- [x] **Phase 3: PCB & PCBA Capabilities & Interactive Configurator** - Implementing `pcb.html`, technical capability tables, and the reactive PCB specification calculator.
 - [ ] **Phase 4: Interactive BOM Upload & Inquiry / RFQ System** - Implementing client-side BOM drag-and-drop tool, spreadsheet inspector, global RFQ modal, and Contact (`contact.html`).
 - [ ] **Phase 5: Production Polish, Responsive QA, SEO & Build Verification** - Cross-device responsive QA, OpenGraph/SEO metadata, accessibility audit, and zero-error production build.
 
@@ -63,8 +63,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 03-01: Construct `pcb.html` layout with detailed technical specification tables and manufacturing galleries
-- [ ] 03-02: Develop reactive PCB specification calculator component with sticky real-time summary card
+- [x] 03-01: Construct `pcb.html` layout with detailed technical specification tables and manufacturing galleries
+- [x] 03-02: Develop reactive PCB specification calculator component with sticky real-time summary card
 
 ---
 
@@ -107,6 +107,6 @@ Plans:
 |-------|----------------|--------|-----------|
 | 1. Foundation, Design System & Asset Migration | 3/3 | Complete | 2026-10-14 |
 | 2. Core Marketing & Sourcing Pages | 3/3 | Complete | 2026-10-14 |
-| 3. PCB & PCBA Capabilities & Interactive Configurator | 0/2 | Not started | - |
+| 3. PCB & PCBA Capabilities & Interactive Configurator | 2/2 | Complete | 2026-10-14 |
 | 4. Interactive BOM Upload & Inquiry / RFQ System | 0/2 | Not started | - |
 | 5. Production Polish, Responsive QA, SEO & Build Verification | 0/2 | Not started | - |

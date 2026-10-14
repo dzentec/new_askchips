@@ -23,9 +23,9 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### PCB & PCBA Capabilities & Interactive Configurator (PCB)
 
-- [ ] **PCB-01**: PCB & PCBA page (`pcb.html`) detailing rigid, flex, metal-core, and assembly capabilities with rich technical tolerance tables
-- [ ] **PCB-02**: Interactive PCB specification calculator allowing selection of layers, base material, thickness, copper weight, and surface finish
-- [ ] **PCB-03**: Reactive PCB spec summary card that updates dynamically in real-time as parameters change and auto-binds to the RFQ inquiry flow
+- [x] **PCB-01**: PCB & PCBA page (`pcb.html`) detailing rigid, flex, metal-core, and assembly capabilities with rich technical tolerance tables
+- [x] **PCB-02**: Interactive PCB specification calculator allowing selection of layers, base material, thickness, copper weight, and surface finish
+- [x] **PCB-03**: Reactive PCB spec summary card that updates dynamically in real-time as parameters change and auto-binds to the RFQ inquiry flow
 
 ### Interactive BOM Upload & Inquiry / RFQ System (INQ)
 
@@ -74,9 +74,9 @@ Which phases cover which requirements.
 | MKTG-01 | Phase 2 | Complete |
 | MKTG-02 | Phase 2 | Complete |
 | MKTG-03 | Phase 2 | Complete |
-| PCB-01 | Phase 3 | Pending |
-| PCB-02 | Phase 3 | Pending |
-| PCB-03 | Phase 3 | Pending |
+| PCB-01 | Phase 3 | Complete |
+| PCB-02 | Phase 3 | Complete |
+| PCB-03 | Phase 3 | Complete |
 | INQ-01 | Phase 4 | Pending |
 | INQ-02 | Phase 4 | Pending |
 | INQ-03 | Phase 4 | Pending |
