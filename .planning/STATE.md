@@ -22,8 +22,8 @@ See: .planning/PROJECT.md (updated 2026-10-14)
 
 Phase: 2 of 5 (Core Marketing & Sourcing Pages)
 Plan: 0 of 3 in current phase
-Status: Ready to plan (02-UI-SPEC approved)
-Last activity: 2026-10-14 - Phase 2 UI contract approved (02-UI-SPEC.md)
+Status: Ready to execute
+Last activity: 2026-10-14 - Phase 2 planned (3 plans across 2 waves)
 
 Progress: [██▎░░░░░░░] 25%
 
