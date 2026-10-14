@@ -3,42 +3,435 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AskChips — Your Core Electronic Component & PCB Manufacturing Partner</title>
-  <meta name="description" content="Tier-1 B2B sourcing for electronic components, high-reliability PCB fabrication, and turnkey PCBA assembly. Upload your BOM for instant verification.">
+  <title>AskChips — Precision Component Sourcing & Turnkey PCB Manufacturing</title>
+  <meta name="description" content="Tier-1 B2B sourcing for electronic components, high-density PCB fabrication (1-32 layers), and rapid turnkey PCBA assembly. Backed by in-house anti-counterfeit testing.">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="stylesheet" href="/src/css/main.css">
 </head>
 <body class="bg-slate-50 text-slate-900 font-sans antialiased min-h-screen flex flex-col">
+  <!-- Global Header Anchor -->
   <div id="global-header"></div>
 
   <main class="flex-grow">
-    <!-- Hero Starter Section -->
-    <section class="relative overflow-hidden bg-white border-b border-slate-200/80 bg-grid-pattern py-20 lg:py-28">
+    <!-- Hero Section -->
+    <section id="hero" class="relative overflow-hidden bg-white border-b border-slate-200/80 bg-grid-pattern py-16 sm:py-24 lg:py-28">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="max-w-3xl">
-          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-medium mb-6">
-            <span class="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
-            100% Verified Supply Chain & ISO Certified Manufacturing
+        <div class="max-w-4xl">
+          <!-- Cert & Status Tag -->
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-mono font-medium mb-6">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span>ISO 9001:2015 CERTIFIED</span>
+            <span class="text-slate-300">•</span>
+            <span>GLOBAL B2B ELECTRONICS SUPPLY CHAIN</span>
           </div>
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 leading-tight">
-            Your Core Partner for <span class="text-blue-600">Component Sourcing</span> & PCB Fabrication
+
+          <!-- Headline -->
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 leading-[1.1]">
+            Precision Sourcing & Turnkey <span class="text-blue-600">PCB Manufacturing</span>
           </h1>
-          <p class="mt-6 text-lg sm:text-xl text-slate-600 leading-relaxed">
-            From precision BOM sourcing across authorized global franchises to rapid-turn multi-layer PCB production and PCBA assembly. Engineered for hardware teams and procurement leaders.
+
+          <!-- Subtitle -->
+          <p class="mt-6 text-lg sm:text-xl text-slate-600 leading-relaxed max-w-3xl">
+            Single-source procurement for tier-1 electronic components, high-density PCBs, and rapid PCBA assembly. Backed by in-house anti-counterfeit laboratory inspection and guaranteed factory traceability.
           </p>
-          <div class="mt-8 flex flex-wrap gap-4">
-            <a href="/contact.html" class="inline-flex items-center justify-center px-6 py-3.5 rounded-lg text-base font-medium text-white bg-blue-600 hover:bg-blue-700 transition shadow-sm hover:shadow">
-              Upload BOM File
+
+          <!-- Primary & Secondary CTAs -->
+          <div class="mt-8 flex flex-wrap gap-4 items-center">
+            <a href="#quick-quote" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg text-base font-semibold text-white bg-blue-600 hover:bg-blue-700 transition shadow-sm hover:shadow-md">
+              <svg class="w-5 h-5 text-blue-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/>
+              </svg>
+              Upload BOM for Instant Quote
             </a>
-            <a href="/pcb.html" class="inline-flex items-center justify-center px-6 py-3.5 rounded-lg text-base font-medium text-slate-700 bg-white border border-slate-300 hover:bg-slate-50 transition shadow-sm">
+            <a href="/pcb.html" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg text-base font-semibold text-slate-800 bg-white border border-slate-300 hover:bg-slate-50 hover:border-slate-400 transition shadow-sm">
               Explore PCB Capabilities
+              <svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+              </svg>
             </a>
+          </div>
+        </div>
+
+        <!-- Metrics Ribbon -->
+        <div class="mt-16 grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+          <div class="bg-white/80 backdrop-blur border border-slate-200 rounded-xl p-5 sm:p-6 shadow-sm hover:shadow transition-shadow">
+            <div class="text-3xl sm:text-4xl font-extrabold font-mono text-slate-900 tracking-tight">18+</div>
+            <div class="mt-1 text-sm font-semibold text-blue-600">Years Experience</div>
+            <div class="mt-1 text-xs text-slate-500 leading-normal">Supply chain mastery & authorized franchise ties</div>
+          </div>
+          <div class="bg-white/80 backdrop-blur border border-slate-200 rounded-xl p-5 sm:p-6 shadow-sm hover:shadow transition-shadow">
+            <div class="text-3xl sm:text-4xl font-extrabold font-mono text-slate-900 tracking-tight">50,000+</div>
+            <div class="mt-1 text-sm font-semibold text-blue-600">Completed Orders</div>
+            <div class="mt-1 text-xs text-slate-500 leading-normal">Delivered to hardware engineering teams globally</div>
+          </div>
+          <div class="bg-white/80 backdrop-blur border border-slate-200 rounded-xl p-5 sm:p-6 shadow-sm hover:shadow transition-shadow">
+            <div class="text-3xl sm:text-4xl font-extrabold font-mono text-slate-900 tracking-tight">99.8%</div>
+            <div class="mt-1 text-sm font-semibold text-emerald-600">On-Time Dispatch</div>
+            <div class="mt-1 text-xs text-slate-500 leading-normal">Rapid 24h prototypes and scheduled mass production</div>
+          </div>
+          <div class="bg-white/80 backdrop-blur border border-slate-200 rounded-xl p-5 sm:p-6 shadow-sm hover:shadow transition-shadow">
+            <div class="text-3xl sm:text-4xl font-extrabold font-mono text-slate-900 tracking-tight">100%</div>
+            <div class="mt-1 text-sm font-semibold text-emerald-600">Genuine Guarantee</div>
+            <div class="mt-1 text-xs text-slate-500 leading-normal">In-house optical, X-ray & electrical test verification</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Service Pillars -->
+    <section id="services" class="py-16 sm:py-24 bg-slate-50 border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mb-12">
+          <div class="text-xs font-mono font-semibold uppercase tracking-wider text-blue-600 mb-2">Core Services</div>
+          <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900">
+            Integrated Manufacturing & Sourcing Capabilities
+          </h2>
+          <p class="mt-4 text-lg text-slate-600">
+            Bridge your entire electronics production lifecycle with three dedicated industrial engineering pillars.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Pillar 1: Components -->
+          <div class="bg-white border border-slate-200 rounded-xl p-6 sm:p-8 flex flex-col justify-between hover:border-blue-400 hover:shadow-md transition-all group">
+            <div>
+              <div class="w-12 h-12 rounded-lg bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600 mb-6 group-hover:scale-105 transition-transform">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
+                </svg>
+              </div>
+              <div class="text-xs font-mono font-medium text-blue-600 uppercase tracking-wider mb-1">Pillar 01</div>
+              <h3 class="text-xl font-bold text-slate-900 mb-3">Electronic Components Sourcing</h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                Active ICs, microcontrollers, memory, passives, and hard-to-find obsolete parts. Direct factory relationships and 200+ authorized line cards with 100% anti-counterfeit guarantee.
+              </p>
+              <div class="space-y-2 mb-6 text-xs text-slate-500 font-mono">
+                <div class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                  <span>15M+ Indexed SKUs & Fast Stock Allocation</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                  <span>In-House Microscopic & X-Ray Testing</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                  <span>Complete Certificate of Conformance (CoC)</span>
+                </div>
+              </div>
+            </div>
+            <a href="/components.html" class="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 hover:text-blue-700 transition">
+              Explore Component Catalog
+              <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Pillar 2: PCB Fabrication -->
+          <div class="bg-white border border-slate-200 rounded-xl p-6 sm:p-8 flex flex-col justify-between hover:border-blue-400 hover:shadow-md transition-all group">
+            <div>
+              <div class="w-12 h-12 rounded-lg bg-emerald-50 border border-emerald-100 flex items-center justify-center text-emerald-600 mb-6 group-hover:scale-105 transition-transform">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                </svg>
+              </div>
+              <div class="text-xs font-mono font-medium text-emerald-600 uppercase tracking-wider mb-1">Pillar 02</div>
+              <h3 class="text-xl font-bold text-slate-900 mb-3">PCB Prototype & Mass Production</h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                Precision bare printed circuit boards from 1 to 32 layers. Specializing in high-frequency RF, Rigid-Flex, HDI with micro-vias, and heavy copper substrates.
+              </p>
+              <div class="space-y-2 mb-6 text-xs text-slate-500 font-mono">
+                <div class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                  <span>1-32 Layers / 3mil Trace & Spacing</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                  <span>Quick-Turn 24-Hour Express Prototypes</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                  <span>IPC Class 2 & Class 3 Strict Compliance</span>
+                </div>
+              </div>
+            </div>
+            <a href="/pcb.html" class="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 hover:text-blue-700 transition">
+              View PCB Technical Specs
+              <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Pillar 3: Turnkey PCBA -->
+          <div class="bg-white border border-slate-200 rounded-xl p-6 sm:p-8 flex flex-col justify-between hover:border-blue-400 hover:shadow-md transition-all group">
+            <div>
+              <div class="w-12 h-12 rounded-lg bg-indigo-50 border border-indigo-100 flex items-center justify-center text-indigo-600 mb-6 group-hover:scale-105 transition-transform">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                </svg>
+              </div>
+              <div class="text-xs font-mono font-medium text-indigo-600 uppercase tracking-wider mb-1">Pillar 03</div>
+              <h3 class="text-xl font-bold text-slate-900 mb-3">Turnkey PCBA Assembly</h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                Automated surface mount (SMT) and through-hole (THT) assembly with 01005 passive placement, high-density fine-pitch BGA mounting, and 100% 3D AOI and X-ray inspection.
+              </p>
+              <div class="space-y-2 mb-6 text-xs text-slate-500 font-mono">
+                <div class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                  <span>Component Sourcing + Bare Board + Assembly</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                  <span>Automated Optical & 3D X-Ray Inspection</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                  <span>Conformal Coating & Functional Testing (FCT)</span>
+                </div>
+              </div>
+            </div>
+            <a href="/pcb.html#pcba" class="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 hover:text-blue-700 transition">
+              Explore PCBA Capabilities
+              <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Authorized Distributor Line Cards -->
+    <section id="distributors" class="py-16 sm:py-24 bg-white border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <div class="text-xs font-mono font-semibold uppercase tracking-wider text-blue-600 mb-2">Supply Chain Network</div>
+          <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900">
+            Tier-1 Supply Chain & Direct Line Network
+          </h2>
+          <p class="mt-4 text-base sm:text-lg text-slate-600">
+            Direct franchise and authorized distribution relationships with leading global semiconductor and passive manufacturers.
+          </p>
+        </div>
+
+        <!-- 15-Item Distributor Logo Grid -->
+        <div class="grid grid-cols-3 sm:grid-cols-5 gap-4 md:gap-6">
+          <div class="bg-slate-50 border border-slate-200/90 rounded-xl p-4 flex flex-col items-center justify-center hover:bg-white hover:border-blue-400 hover:shadow-sm transition-all group">
+            <img src="/images/distributor/01.webp" alt="Texas Instruments" class="h-10 w-auto object-contain grayscale group-hover:grayscale-0 transition-all">
+            <span class="mt-2 text-xs font-mono text-slate-500 text-center">Texas Instruments</span>
+          </div>
+          <div class="bg-slate-50 border border-slate-200/90 rounded-xl p-4 flex flex-col items-center justify-center hover:bg-white hover:border-blue-400 hover:shadow-sm transition-all group">
+            <img src="/images/distributor/02.webp" alt="STMicroelectronics" class="h-10 w-auto object-contain grayscale group-hover:grayscale-0 transition-all">
+            <span class="mt-2 text-xs font-mono text-slate-500 text-center">STMicroelectronics</span>
+          </div>
+          <div class="bg-slate-50 border border-slate-200/90 rounded-xl p-4 flex flex-col items-center justify-center hover:bg-white hover:border-blue-400 hover:shadow-sm transition-all group">
+            <img src="/images/distributor/03.webp" alt="Microchip Technology" class="h-10 w-auto object-contain grayscale group-hover:grayscale-0 transition-all">
+            <span class="mt-2 text-xs font-mono text-slate-500 text-center">Microchip</span>
+          </div>
+          <div class="bg-slate-50 border border-slate-200/90 rounded-xl p-4 flex flex-col items-center justify-center hover:bg-white hover:border-blue-400 hover:shadow-sm transition-all group">
+            <img src="/images/distributor/04.webp" alt="Analog Devices" class="h-10 w-auto object-contain grayscale group-hover:grayscale-0 transition-all">
+            <span class="mt-2 text-xs font-mono text-slate-500 text-center">Analog Devices</span>
+          </div>
+          <div class="bg-slate-50 border border-slate-200/90 rounded-xl p-4 flex flex-col items-center justify-center hover:bg-white hover:border-blue-400 hover:shadow-sm transition-all group">
+            <img src="/images/distributor/05.webp" alt="NXP Semiconductors" class="h-10 w-auto object-contain grayscale group-hover:grayscale-0 transition-all">
+            <span class="mt-2 text-xs font-mono text-slate-500 text-center">NXP Semi</span>
+          </div>
+          <div class="bg-slate-50 border border-slate-200/90 rounded-xl p-4 flex flex-col items-center justify-center hover:bg-white hover:border-blue-400 hover:shadow-sm transition-all group">
+            <img src="/images/distributor/06.webp" alt="Infineon Technologies" class="h-10 w-auto object-contain grayscale group-hover:grayscale-0 transition-all">
+            <span class="mt-2 text-xs font-mono text-slate-500 text-center">Infineon</span>
+          </div>
+          <div class="bg-slate-50 border border-slate-200/90 rounded-xl p-4 flex flex-col items-center justify-center hover:bg-white hover:border-blue-400 hover:shadow-sm transition-all group">
+            <img src="/images/distributor/07.webp" alt="Murata Manufacturing" class="h-10 w-auto object-contain grayscale group-hover:grayscale-0 transition-all">
+            <span class="mt-2 text-xs font-mono text-slate-500 text-center">Murata</span>
+          </div>
+          <div class="bg-slate-50 border border-slate-200/90 rounded-xl p-4 flex flex-col items-center justify-center hover:bg-white hover:border-blue-400 hover:shadow-sm transition-all group">
+            <img src="/images/distributor/08.webp" alt="TDK Corporation" class="h-10 w-auto object-contain grayscale group-hover:grayscale-0 transition-all">
+            <span class="mt-2 text-xs font-mono text-slate-500 text-center">TDK Corp</span>
+          </div>
+          <div class="bg-slate-50 border border-slate-200/90 rounded-xl p-4 flex flex-col items-center justify-center hover:bg-white hover:border-blue-400 hover:shadow-sm transition-all group">
+            <img src="/images/distributor/09.webp" alt="Yageo Corporation" class="h-10 w-auto object-contain grayscale group-hover:grayscale-0 transition-all">
+            <span class="mt-2 text-xs font-mono text-slate-500 text-center">Yageo</span>
+          </div>
+          <div class="bg-slate-50 border border-slate-200/90 rounded-xl p-4 flex flex-col items-center justify-center hover:bg-white hover:border-blue-400 hover:shadow-sm transition-all group">
+            <img src="/images/distributor/10.webp" alt="Samsung Electro-Mechanics" class="h-10 w-auto object-contain grayscale group-hover:grayscale-0 transition-all">
+            <span class="mt-2 text-xs font-mono text-slate-500 text-center">Samsung EM</span>
+          </div>
+          <div class="bg-slate-50 border border-slate-200/90 rounded-xl p-4 flex flex-col items-center justify-center hover:bg-white hover:border-blue-400 hover:shadow-sm transition-all group">
+            <img src="/images/distributor/11.webp" alt="Vishay Intertechnology" class="h-10 w-auto object-contain grayscale group-hover:grayscale-0 transition-all">
+            <span class="mt-2 text-xs font-mono text-slate-500 text-center">Vishay</span>
+          </div>
+          <div class="bg-slate-50 border border-slate-200/90 rounded-xl p-4 flex flex-col items-center justify-center hover:bg-white hover:border-blue-400 hover:shadow-sm transition-all group">
+            <img src="/images/distributor/12.webp" alt="onsemi" class="h-10 w-auto object-contain grayscale group-hover:grayscale-0 transition-all">
+            <span class="mt-2 text-xs font-mono text-slate-500 text-center">onsemi</span>
+          </div>
+          <div class="bg-slate-50 border border-slate-200/90 rounded-xl p-4 flex flex-col items-center justify-center hover:bg-white hover:border-blue-400 hover:shadow-sm transition-all group">
+            <img src="/images/distributor/13.webp" alt="Renesas Electronics" class="h-10 w-auto object-contain grayscale group-hover:grayscale-0 transition-all">
+            <span class="mt-2 text-xs font-mono text-slate-500 text-center">Renesas</span>
+          </div>
+          <div class="bg-slate-50 border border-slate-200/90 rounded-xl p-4 flex flex-col items-center justify-center hover:bg-white hover:border-blue-400 hover:shadow-sm transition-all group">
+            <img src="/images/distributor/14.webp" alt="Broadcom" class="h-10 w-auto object-contain grayscale group-hover:grayscale-0 transition-all">
+            <span class="mt-2 text-xs font-mono text-slate-500 text-center">Broadcom</span>
+          </div>
+          <div class="bg-slate-50 border border-slate-200/90 rounded-xl p-4 flex flex-col items-center justify-center hover:bg-white hover:border-blue-400 hover:shadow-sm transition-all group">
+            <img src="/images/distributor/15.webp" alt="TE Connectivity" class="h-10 w-auto object-contain grayscale group-hover:grayscale-0 transition-all">
+            <span class="mt-2 text-xs font-mono text-slate-500 text-center">TE Connect</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose AskChips / Quality Pillars -->
+    <section id="why-us" class="py-16 sm:py-24 bg-slate-50 border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mb-12">
+          <div class="text-xs font-mono font-semibold uppercase tracking-wider text-blue-600 mb-2">Quality & Trust</div>
+          <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900">
+            Why Hardware Innovators Rely on AskChips
+          </h2>
+          <p class="mt-4 text-lg text-slate-600">
+            Engineered from the ground up to eradicate counterfeit risks, eliminate lead-time uncertainty, and uphold mission-critical standards.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow transition-shadow">
+            <div class="w-10 h-10 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center font-bold font-mono text-sm mb-4">
+              01
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">In-House Quality Lab</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Every incoming batch undergoes optical verification under 40x magnification, chemical marking test, and non-destructive X-ray inspection.
+            </p>
+          </div>
+
+          <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow transition-shadow">
+            <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold font-mono text-sm mb-4">
+              02
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Dual Logistics Hubs</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Logistics centers in Shenzhen (manufacturing epicenter) and Hong Kong (international tax-free port) ensure fast global customs clearance.
+            </p>
+          </div>
+
+          <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow transition-shadow">
+            <div class="w-10 h-10 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center font-bold font-mono text-sm mb-4">
+              03
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Dedicated FAE Support</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Experienced Field Application Engineers assist with lifecycle management, obsolete part cross-matching, and PCB DFM design reviews.
+            </p>
+          </div>
+
+          <div class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow transition-shadow">
+            <div class="w-10 h-10 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center font-bold font-mono text-sm mb-4">
+              04
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">1-Year Full Warranty</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Comprehensive performance guarantee on all delivered active components and manufactured circuit boards, backed by full CoC documentation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials / Client Proof -->
+    <section id="testimonials" class="py-16 sm:py-24 bg-white border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <div class="text-xs font-mono font-semibold uppercase tracking-wider text-blue-600 mb-2">Client Endorsements</div>
+          <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900">
+            Trusted by Engineering & Procurement Leaders
+          </h2>
+          <p class="mt-4 text-base sm:text-lg text-slate-600">
+            Real feedback from aerospace, automotive, and industrial hardware innovators.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 sm:p-8 flex flex-col justify-between">
+            <p class="text-slate-700 text-sm leading-relaxed italic mb-6">
+              "AskChips sourced 2,500 hard-to-find STM32 microcontrollers during an acute production shutdown. Their X-ray inspection report gave our QA department complete confidence to proceed."
+            </p>
+            <div class="border-t border-slate-200 pt-4">
+              <div class="font-bold text-slate-900 text-sm">Marcus Vance</div>
+              <div class="text-xs text-slate-500 font-mono">VP of Hardware Engineering • Industrial Automation (Germany)</div>
+            </div>
+          </div>
+
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 sm:p-8 flex flex-col justify-between">
+            <p class="text-slate-700 text-sm leading-relaxed italic mb-6">
+              "Their turnkey PCB fabrication and assembly service reduced our prototype turnaround from 4 weeks to 6 business days. The IPC Class 3 solder quality on BGA parts is outstanding."
+            </p>
+            <div class="border-t border-slate-200 pt-4">
+              <div class="font-bold text-slate-900 text-sm">Elena Rostova</div>
+              <div class="text-xs text-slate-500 font-mono">Senior Lead Engineer • Medical Diagnostics Corp (UK)</div>
+            </div>
+          </div>
+
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 sm:p-8 flex flex-col justify-between">
+            <p class="text-slate-700 text-sm leading-relaxed italic mb-6">
+              "BOM analysis was delivered within 8 hours with three viable pin-compatible second-source alternatives for obsolete components. Outstanding engineering responsiveness."
+            </p>
+            <div class="border-t border-slate-200 pt-4">
+              <div class="font-bold text-slate-900 text-sm">David Chen</div>
+              <div class="text-xs text-slate-500 font-mono">Global Procurement Director • Telecom Solutions (USA)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Quote / BOM Intake Strip -->
+    <section id="quick-quote" class="py-16 sm:py-24 bg-slate-900 text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-slate-800/80 border border-slate-700 rounded-2xl p-8 sm:p-12 lg:p-16 relative overflow-hidden">
+          <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+          <div class="max-w-3xl">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-blue-900/60 border border-blue-700/60 text-blue-300 text-xs font-mono font-medium mb-4">
+              24-HOUR RFQ TURNAROUND
+            </div>
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-tight">
+              Ready to Accelerate Your Electronic Build?
+            </h2>
+            <p class="mt-4 text-base sm:text-lg text-slate-300 leading-relaxed">
+              Upload your Bill of Materials (.xlsx, .xls, .csv) for rapid line-by-line pricing, availability verification, and alternative sourcing suggestions.
+            </p>
+
+            <!-- Interactive Dropzone Trigger Container -->
+            <div class="mt-8 border-2 border-dashed border-slate-600 hover:border-blue-500 rounded-xl p-6 sm:p-8 bg-slate-900/50 transition-colors text-center cursor-pointer group">
+              <div class="w-12 h-12 mx-auto rounded-full bg-slate-800 text-blue-400 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/>
+                </svg>
+              </div>
+              <div class="text-sm font-medium text-slate-200">
+                <span class="text-blue-400 font-semibold underline underline-offset-2">Click to select BOM file</span> or drag & drop here
+              </div>
+              <p class="mt-1 text-xs text-slate-400 font-mono">
+                Supports Excel (.xlsx, .xls) and CSV up to 15MB • Confidentiality Guaranteed (NDA on request)
+              </p>
+              <div class="mt-5">
+                <a href="/contact.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-semibold text-white bg-blue-600 hover:bg-blue-500 transition shadow">
+                  Proceed to Direct RFQ Intake
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- Global Footer Anchor -->
   <div id="global-footer"></div>
   <script type="module" src="/src/js/main.js"></script>
 </body>
