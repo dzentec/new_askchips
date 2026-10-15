@@ -14,13 +14,13 @@
   <meta property="og:title" content="About Faseen Co., Ltd. (AskChips) — PCB Manufacturing, PCBA & Testing Lab">
   <meta property="og:description" content="Founded in 1996 in Shenzhen, Faseen Co., Ltd. operates three state-of-the-art production bases specializing in high-precision PCBs, complete PCBA, and global B2B sourcing.">
   <meta property="og:url" content="https://askchips.com/about.html">
-  <meta property="og:image" content="https://askchips.com/images/main/askchips-og.png">
+  <meta property="og:image" content="https://askchips.com/images/main/askchips-og.webp">
 
   <!-- Twitter Card Metadata -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="About Faseen Co., Ltd. (AskChips) — PCB Manufacturing, PCBA & Testing Lab">
   <meta name="twitter:description" content="Founded in 1996 in Shenzhen, Faseen Co., Ltd. operates three state-of-the-art production bases specializing in high-precision PCBs, complete PCBA, and global B2B sourcing.">
-  <meta name="twitter:image" content="https://askchips.com/images/main/askchips-og.png">
+  <meta name="twitter:image" content="https://askchips.com/images/main/askchips-og.webp">
 
   <!-- Structured Data: AboutPage -->
   <script type="application/ld+json">
@@ -77,44 +77,57 @@
 
   <main id="main-content" role="main" class="flex-grow">
     <!-- About Hero Section -->
-    <section id="about-hero" class="relative overflow-hidden bg-white border-b border-slate-200/80 bg-grid-pattern py-16 sm:py-20 lg:py-24">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="about-hero" class="relative overflow-hidden bg-slate-950 text-white border-b border-slate-800 py-16 sm:py-20 lg:py-24">
+      <!-- Background Banner Graphic with Adaptive picture -->
+      <div class="absolute inset-0 pointer-events-none z-0">
+        <picture>
+          <source srcset="/images/banners/hero-about-desktop.avif" type="image/avif" media="(min-width: 768px)">
+          <source srcset="/images/banners/hero-about-mobile.avif" type="image/avif" media="(max-width: 767px)">
+          <source srcset="/images/banners/hero-about-desktop.webp" type="image/webp" media="(min-width: 768px)">
+          <source srcset="/images/banners/hero-about-mobile.webp" type="image/webp" media="(max-width: 767px)">
+          <img src="/images/banners/hero-about-desktop.webp" alt="Faseen SMT Manufacturing Facility" class="w-full h-full object-cover object-right md:object-center opacity-45">
+        </picture>
+        <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-transparent"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-slate-950/20"></div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="max-w-4xl">
           <!-- Tag -->
-          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-mono font-medium mb-6">
-            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900/90 border border-slate-700/80 text-slate-300 text-xs font-mono font-medium mb-6">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
             <span>FOUNDED 1996 • SHENZHEN</span>
-            <span class="text-slate-300">•</span>
+            <span class="text-slate-400">•</span>
             <span>3 PRODUCTION BASES • GLOBAL EMS</span>
           </div>
 
           <!-- Headline -->
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 leading-[1.1]">
-            About <span class="text-blue-600">Faseen Co., Ltd.</span>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.1]">
+            About <span class="text-blue-400">Faseen Co., Ltd.</span>
           </h1>
 
           <!-- Subtitle / Main Description -->
-          <p class="mt-6 text-lg sm:text-xl text-slate-600 leading-relaxed max-w-3xl">
+          <p class="mt-6 text-lg sm:text-xl text-slate-300 leading-relaxed max-w-3xl">
             Founded in 1996 in Shenzhen, Guangdong Province, China, Faseen Co., Ltd. operates three state-of-the-art production bases specializing in high-precision double-sided PCBs, multilayer PCBs, and complete PCB Assembly (PCBA). We serve clients worldwide with rapid prototyping, full-scale mass production, and fast delivery turnaround.
           </p>
 
           <!-- Quick Stats Row -->
-          <div class="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-6 pt-6 border-t border-slate-200/80">
+          <div class="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-6 pt-6 border-t border-slate-800">
             <div>
-              <div class="text-2xl sm:text-3xl font-bold font-mono text-slate-900">28+ Years</div>
-              <div class="text-xs text-slate-500 font-medium mt-1">Continuous Operation (Est. 1996)</div>
+              <div class="text-2xl sm:text-3xl font-bold font-mono text-white">28+ Years</div>
+              <div class="text-xs text-slate-400 font-medium mt-1">Continuous Operation (Est. 1996)</div>
             </div>
             <div>
-              <div class="text-2xl sm:text-3xl font-bold font-mono text-slate-900">3 Bases</div>
-              <div class="text-xs text-slate-500 font-medium mt-1">Advanced Manufacturing Hubs</div>
+              <div class="text-2xl sm:text-3xl font-bold font-mono text-white">3 Bases</div>
+              <div class="text-xs text-slate-400 font-medium mt-1">Advanced Manufacturing Hubs</div>
             </div>
             <div>
-              <div class="text-2xl sm:text-3xl font-bold font-mono text-blue-600">ISO & UL</div>
-              <div class="text-xs text-slate-500 font-medium mt-1">ISO 9001, 14001, UL Certified</div>
+              <div class="text-2xl sm:text-3xl font-bold font-mono text-blue-400">ISO & UL</div>
+              <div class="text-xs text-slate-400 font-medium mt-1">ISO 9001, 14001, UL Certified</div>
             </div>
             <div>
-              <div class="text-2xl sm:text-3xl font-bold font-mono text-emerald-600">Turnkey</div>
-              <div class="text-xs text-slate-500 font-medium mt-1">In-House Embedded R&D</div>
+              <div class="text-2xl sm:text-3xl font-bold font-mono text-emerald-400">Turnkey</div>
+              <div class="text-xs text-slate-400 font-medium mt-1">In-House Embedded R&D</div>
             </div>
           </div>
         </div>
@@ -295,7 +308,7 @@
     </section>
 
     <!-- In-House Laboratory Equipment Showcase (9 Migrated Photos) -->
-    <section id="lab-equipment" class="py-16 sm:py-24 bg-white border-b border-slate-200">
+    <section id="lab-equipment" class="hidden py-16 sm:py-24 bg-white border-b border-slate-200">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl mb-12">
           <div class="text-xs font-mono font-semibold uppercase tracking-wider text-emerald-600 mb-2">Diagnostic Capabilities</div>
@@ -448,7 +461,7 @@
     </section>
 
     <!-- 6-Step QC Inspection Workflow -->
-    <section id="qc-workflow" class="py-16 sm:py-24 bg-slate-50 border-b border-slate-200">
+    <section id="qc-workflow" class="hidden py-16 sm:py-24 bg-slate-50 border-b border-slate-200">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl mb-12">
           <div class="text-xs font-mono font-semibold uppercase tracking-wider text-blue-600 mb-2">Quality Control</div>

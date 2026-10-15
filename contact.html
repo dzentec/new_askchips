@@ -14,13 +14,13 @@
   <meta property="og:title" content="Contact & Request for Quote (RFQ) — AskChips">
   <meta property="og:description" content="Submit your BOM or PCB files for an instant manufacturing quotation. Direct contact for our Shenzhen HQ and Hong Kong Global Logistics Center. 24h SLA.">
   <meta property="og:url" content="https://askchips.com/contact.html">
-  <meta property="og:image" content="https://askchips.com/images/main/askchips-og.png">
+  <meta property="og:image" content="https://askchips.com/images/main/askchips-og.webp">
 
   <!-- Twitter Card Metadata -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Contact & Request for Quote (RFQ) — AskChips">
   <meta name="twitter:description" content="Submit your BOM or PCB files for an instant manufacturing quotation. Direct contact for our Shenzhen HQ and Hong Kong Global Logistics Center. 24h SLA.">
-  <meta name="twitter:image" content="https://askchips.com/images/main/askchips-og.png">
+  <meta name="twitter:image" content="https://askchips.com/images/main/askchips-og.webp">
 
   <!-- Structured Data: ContactPage & LocalBusiness -->
   <script type="application/ld+json">
@@ -66,21 +66,34 @@
 
   <main id="main-content" role="main" class="flex-grow">
     <!-- Contact Hero Section -->
-    <section class="relative overflow-hidden bg-white border-b border-slate-200/80 bg-grid-pattern py-14 sm:py-20">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact-hero" class="relative overflow-hidden bg-slate-950 text-white border-b border-slate-800 py-14 sm:py-20">
+      <!-- Background Banner Graphic with Adaptive picture -->
+      <div class="absolute inset-0 pointer-events-none z-0">
+        <picture>
+          <source srcset="/images/banners/hero-contact-desktop.avif" type="image/avif" media="(min-width: 768px)">
+          <source srcset="/images/banners/hero-contact-mobile.avif" type="image/avif" media="(max-width: 767px)">
+          <source srcset="/images/banners/hero-contact-desktop.webp" type="image/webp" media="(min-width: 768px)">
+          <source srcset="/images/banners/hero-contact-mobile.webp" type="image/webp" media="(max-width: 767px)">
+          <img src="/images/banners/hero-contact-desktop.webp" alt="Global Engineering Support & Sales Office" class="w-full h-full object-cover object-right md:object-center opacity-45">
+        </picture>
+        <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-transparent"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-slate-950/20"></div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="max-w-3xl">
-          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-mono font-medium mb-6">
-            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900/90 border border-slate-700/80 text-slate-300 text-xs font-mono font-medium mb-6">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
             <span>DIRECT INQUIRY & GLOBAL ENGINEERING SUPPORT</span>
-            <span class="text-slate-300">•</span>
+            <span class="text-slate-400">•</span>
             <span>&lt;24H RESPONSE SLA</span>
           </div>
 
-          <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-slate-900 leading-tight">
-            Request a Quote / <span class="text-blue-600">Contact Sales</span>
+          <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-white leading-tight">
+            Request a Quote / <span class="text-blue-400">Contact Sales</span>
           </h1>
 
-          <p class="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed">
+          <p class="mt-4 text-base sm:text-lg text-slate-300 leading-relaxed">
             Upload your BOM spreadsheet, Gerber packages, or part numbers. Our dedicated technical procurement engineers in Shenzhen and Hong Kong deliver itemized quotes and lead times within 24 hours.
           </p>
         </div>

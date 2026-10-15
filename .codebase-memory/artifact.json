@@ -1,11 +1,11 @@
 {
     "schema_version": 2,
-    "commit": "c62df09b49d16978ee1e6a33c49e3045e418227d",
-    "indexed_at": "2026-10-15T18:26:39Z",
+    "commit": "6f270814cadf63404c296f8948fa8a79ec2b92e2",
+    "indexed_at": "2026-10-15T21:07:33Z",
     "project": "D-Tasks-Sunkey-askchips",
-    "nodes": 461,
-    "edges": 584,
+    "nodes": 459,
+    "edges": 581,
     "original_size": 2359296,
-    "compressed_size": 273212,
+    "compressed_size": 272135,
     "compression_level": 9
 }
