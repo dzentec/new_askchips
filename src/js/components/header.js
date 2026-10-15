@@ -33,7 +33,7 @@ export function renderHeader(currentPath) {
   }).join('');
 
   return `
-    <header role="banner" id="site-header" class="sticky top-0 z-50 w-full">
+    <header role="banner" id="site-header" class="w-full">
       <nav role="navigation" aria-label="Main Navigation" class="w-full backdrop-blur-md bg-white/95 border-b border-slate-200/90 transition-shadow duration-200" id="main-nav">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex items-center justify-between h-20">
@@ -90,6 +90,7 @@ export function initHeader() {
   const container = document.getElementById('global-header');
   if (!container) return;
 
+  container.className = 'sticky top-0 z-50 w-full block';
   container.innerHTML = renderHeader(window.location.pathname);
 
   const menuBtn = document.getElementById('mobile-menu-btn');

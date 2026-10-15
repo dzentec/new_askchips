@@ -1,5 +1,6 @@
 import { initHeader } from './components/header.js';
 import { initFooter } from './components/footer.js';
+import { initBackToTop } from './components/back-to-top.js';
 import { initPcbConfigurator } from './components/pcb-configurator.js';
 import { initRfqModal, openRfqModal } from './components/rfq-modal.js';
 import { initBomUploader } from './components/bom-uploader.js';
@@ -145,6 +146,7 @@ function initContactPage() {
 function bootstrap() {
   initHeader();
   initFooter();
+  initBackToTop();
   initRfqModal();
 
   if (document.getElementById('configurator-root')) {
